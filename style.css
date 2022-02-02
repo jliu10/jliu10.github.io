@@ -2,8 +2,13 @@ a {
 
 }
 
+body {
+
+}
+
 .bigText {
     font-size: 36pt;
     font-family: "Zilla Slab", serif;
+    margin-left: 12px;
     /*  */
 }
