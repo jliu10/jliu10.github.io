@@ -13,6 +13,7 @@ a:active {
 
 body {
     color: #7851a9;
+    padding: 0px;
 }
 body.lightMode {
     color: #474747;
@@ -22,8 +23,8 @@ body.darkMode {
 }
 
 div {
-    margin-left: 0px;
-    margin-right: 0px;
+    /* margin-left: 0px;
+    margin-right: 0px; */
 }
 
 .bigText {
