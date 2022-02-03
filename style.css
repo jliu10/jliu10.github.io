@@ -13,7 +13,7 @@ a:active {
 
 body {
     color: #7851a9;
-    padding: 0px;
+    padding-left: 0px;
 }
 body.lightMode {
     color: #474747;
