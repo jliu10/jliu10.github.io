@@ -2,7 +2,8 @@ a:link {
     text-decoration: none;
 }
 a:visited {
-    color: currentcolor;
+    text-decoration: none;
+    text-color: currentcolor;
 }
 a:hover {
     text-decoration: none;
