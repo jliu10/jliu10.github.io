@@ -12,10 +12,10 @@ a:active {
 }
 
 body {
-    color: #7851a9
+    color: #7851a9;
 }
 body.lightMode {
-    color: #474747
+    color: #474747;
 }
 body.darkMode {
 
