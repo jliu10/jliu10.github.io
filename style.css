@@ -8,12 +8,8 @@ body {
     color: #7851a9;
     margin: 0px;
 }
-body.lightMode {
-    color: #474747;
-}
-body.darkMode {
 
-}
+/* color: #474747; */
 
 div {
     /* margin-left: 0px;
