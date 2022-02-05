@@ -1,7 +1,9 @@
 a {
-    color: currentColor;
+    color: #EEEEEE;
     text-decoration: none;
-
+}
+a:hover {
+    color: #ffd500;
 }
 
 body {
