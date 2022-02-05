@@ -5,7 +5,7 @@
 // Alternating text of my several title descriptions
 {
     var interval = setInterval(changeText, 1000);
-    var counter = 0;
+    var counter = 1;
     var titles = ["programmer", "NAV fan", "photographer (kinda)", "poet (kinda)", "singer (kinda)", "high elo League of Legends player", "League of Legends warding master", "vegetarian"]
 }
 
@@ -16,6 +16,6 @@ function initialize() {
 
 function changeText() {
     if(counter === 8) counter = 0;
-    altText.innerHTML = titles[counter];
+    altText.innerHTML = titles[counter] + ".";
     counter++;
 }
