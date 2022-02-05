@@ -1,5 +1,6 @@
-a:visited, active {
+a:link, visited, active {
     color: currentColor;
+    text-decoration: none;
 }
 
 body {
