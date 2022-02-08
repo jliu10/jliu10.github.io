@@ -11,7 +11,7 @@ body {
     background-color: #EEEEEE;
     color: #7851a9;
     margin: 0px;
-    font-family: "Arial",sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
 }
 
 /* color: #474747; */
@@ -27,7 +27,7 @@ div {
 
 .bigText {
     font-size: 36pt;
-    font-family: "Arial", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     margin-left: 36px;
     margin-top: 0px;
     /* padding-top: 36px; */
