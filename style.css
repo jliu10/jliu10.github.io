@@ -7,12 +7,6 @@
 a {
     text-decoration: none;
 }
-a.purp {
-    color: #7851a9;
-}
-a.white {
-    color: #EEEEEE;
-}
 a:hover {
     color: #ffd500;
     text-decoration: underline;
@@ -53,4 +47,11 @@ p {
     margin-top: 0px;
     /* padding-top: 36px; */
     /*  */
+}
+
+.purp {
+    color: #7851a9;
+}
+.white {
+    color: #EEEEEE;
 }
