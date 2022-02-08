@@ -21,8 +21,18 @@ div {
     margin-right: 0px; */
 }
 
+p {
+    margin: 36px;
+}
+
 #altText {
 
+}
+
+.boldText {
+    font-family: "Arial", sans-serif;
+    color: #7851a9;
+    font-weight: 900px;
 }
 
 .bigText {
