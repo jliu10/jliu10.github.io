@@ -37,7 +37,7 @@ p {
 .boldText {
     font-family: "Arial", sans-serif;
     color: #7851a9;
-    font-weight: 900px;
+    /* font-weight: 900px; */
 }
 
 .bigText {
