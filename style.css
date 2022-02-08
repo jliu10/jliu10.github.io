@@ -1,6 +1,17 @@
+/* COLORS
+    #7851a9 : Pi'erre purple
+    #EEEEEE : less white
+    #ffd500 : yellow
+*/
+
 a {
-    color: #EEEEEE;
     text-decoration: none;
+}
+a.purp {
+    color: #7851a9;
+}
+a.white {
+    color: #EEEEEE;
 }
 a:hover {
     color: #ffd500;
