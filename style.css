@@ -8,7 +8,9 @@ a {
     text-decoration: none;
 }
 a.navLink {
-
+    /* display: block; */
+    padding-left: 8px;
+    padding-right: 8px;
 }
 a:hover {
     color: #ffd500;
@@ -69,6 +71,7 @@ ul {
     top: 0px;
     border-top: 4px solid #EEEEEE;
     background-color: #7851a9;
+    font-size: 36px;
 }
 
 .purp {
