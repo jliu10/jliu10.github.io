@@ -7,6 +7,9 @@
 a {
     text-decoration: none;
 }
+a.navLink {
+
+}
 a:hover {
     color: #ffd500;
     text-decoration: underline;
@@ -30,6 +33,17 @@ p {
     margin: 36px;
 }
 
+li {
+    display: inline;
+    color: #EEEEEE;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 #altText {
 
 }
@@ -47,6 +61,14 @@ p {
     margin-top: 0px;
     /* padding-top: 36px; */
     /*  */
+}
+
+.navBar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    border-top: 4px solid #EEEEEE;
+    background-color: #7851a9;
 }
 
 .purp {
