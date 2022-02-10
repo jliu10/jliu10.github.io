@@ -38,6 +38,22 @@ p {
 li {
     display: inline;
     color: #EEEEEE;
+
+}
+/* li a span {
+    color: #EEEEEE;
+    padding: 0px;
+    border-top: 4px solid red;
+} */
+li a {
+    /* display: inline-block; */
+    color: #EEEEEE;
+    padding: 0px;
+    /* border-top: 4px solid red; */
+}
+
+span.navLink {
+    border-top: 4px solid red;
 }
 
 ul {
