@@ -52,8 +52,11 @@ li a {
     /* border-top: 4px solid red; */
 }
 
-span.navLink {
+a span.navLink {
     border-top: 4px solid red;
+}
+a span.navLink:hover {
+    border-top: 4px solid green;
 }
 
 ul {
