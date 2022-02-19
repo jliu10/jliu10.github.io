@@ -3,6 +3,9 @@
     #EEEEEE : less white
     #ffd500 : yellow
 */
+html {
+    scroll-behavior: smooth;
+}
 
 a {
     text-decoration: none;
