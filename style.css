@@ -3,6 +3,13 @@
     #EEEEEE : less white
     #ffd500 : yellow
 */
+
+:root {
+    --purple: #7851a9;
+    --white: #EEEEEE;
+    --yellow: #ffd500;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -16,13 +23,13 @@ a.navLink {
     padding-right: 8px;
 }
 a:hover {
-    color: #ffd500;
+    color: var(--yellow);
     text-decoration: underline;
 }
 
 body {
-    background-color: #EEEEEE;
-    color: #7851a9;
+    background-color: var(--white);
+    color: var(--purple);
     margin: 0px;
     font-family: "Open Sans", "Arial", sans-serif;
 }
@@ -40,7 +47,7 @@ p {
 
 li {
     display: inline;
-    color: #EEEEEE;
+    color: var(--white);
 
 }
 /* li a span {
@@ -50,7 +57,7 @@ li {
 } */
 li a {
     /* display: inline-block; */
-    color: #EEEEEE;
+    color: var(--white);
     padding: 0px;
     /* border-top: 4px solid red; */
 }
@@ -74,7 +81,7 @@ ul {
 
 .boldText {
     font-family: "Arial", sans-serif;
-    color: #7851a9;
+    color: var(--purple);
     /* font-weight: 900px; */
 }
 
@@ -91,14 +98,14 @@ ul {
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
-    border-top: 4px solid #EEEEEE;
-    background-color: #7851a9;
+    border-top: 4px solid var(--white);
+    background-color: var(--purple);
     font-size: 36px;
 }
 
 .purp {
-    color: #7851a9;
+    color: var(--purple);
 }
 .white {
-    color: #EEEEEE;
+    color: var(--white);
 }
