@@ -2,12 +2,14 @@
     #7851a9 : Pi'erre purple
     #EEEEEE : less white
     #ffd500 : yellow
+    #5f4085 : dark purple
 */
 
 :root {
     --purple: #7851a9;
     --white: #EEEEEE;
     --yellow: #ffd500;
+    --dark-purple: #5f4085;
 }
 
 html {
@@ -19,11 +21,15 @@ a {
 }
 a.navLink {
     /* display: block; */
+    text-decoration: none;
     padding-left: 8px;
     padding-right: 8px;
+
 }
 a:hover {
     color: var(--yellow);
+}
+a.underline:hover {
     text-decoration: underline;
 }
 
@@ -63,7 +69,7 @@ li a {
 }
 
 a span.navLink {
-    border-top: 4px solid var(--white);
+    /* border-top: 4px solid var(--white); */
 }
 a span.navLink:hover {
     border-top: 4px solid var(--yellow);
@@ -98,8 +104,8 @@ ul {
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
-    border-top: 4px solid var(--white);
-    background-color: var(--purple);
+    border-top: 4px solid var(--dark-purple);
+    background-color: var(--dark-purple);
     font-size: 36px;
 }
 
