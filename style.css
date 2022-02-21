@@ -76,13 +76,15 @@ a span.navLink {
     /* border-top: 4px solid var(--white); */
     padding-left: 8px;
     padding-right: 8px;
+    padding-bottom: 4px;
 }
+a span.navLink:active {
+    color: var(--yellow);
+}
+
 a span.navLink:hover {
     border-top: 4px solid var(--yellow);
     background-color: var(--purple);
-}
-a span.navLink:active {
-    
 }
 
 ul {
@@ -117,6 +119,7 @@ ul {
     border-top: 4px solid var(--dark-purple);
     background-color: var(--dark-purple);
     font-size: 36px;
+    padding-bottom: 4px;
 }
 
 .purp {
