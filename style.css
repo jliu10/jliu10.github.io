@@ -6,7 +6,9 @@
 */
 
 /* FONTS
-    futura-pt
+    Zilla Slab
+    Opens Sans
+    Futura
 */
 
 :root {
@@ -26,6 +28,7 @@ a {
 a.navLink {
     /* display: block; */
     text-decoration: none;
+    font-family: "Open Sans";
     padding-left: 8px;
     padding-right: 8px;
 
@@ -81,7 +84,6 @@ a span.navLink {
 a span.navLink:active {
     color: var(--yellow);
 }
-
 a span.navLink:hover {
     border-top: 4px solid var(--yellow);
     background-color: var(--purple);
