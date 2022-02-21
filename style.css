@@ -5,6 +5,10 @@
     #5f4085 : dark purple
 */
 
+/* FONTS
+    futura-pt
+*/
+
 :root {
     --purple: #7851a9;
     --white: #EEEEEE;
@@ -70,9 +74,15 @@ li a {
 
 a span.navLink {
     /* border-top: 4px solid var(--white); */
+    padding-left: 8px;
+    padding-right: 8px;
 }
 a span.navLink:hover {
     border-top: 4px solid var(--yellow);
+    background-color: var(--purple);
+}
+a span.navLink:active {
+    
 }
 
 ul {
