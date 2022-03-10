@@ -61,8 +61,6 @@ p {
 
 li {
     display: inline;
-    color: var(--white);
-
 }
 /* li a span {
     color: #EEEEEE;
@@ -90,7 +88,7 @@ a span.navLink:hover {
     background-color: var(--purple);
 }
 
-ul {
+center ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
