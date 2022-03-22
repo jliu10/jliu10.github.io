@@ -16,6 +16,7 @@
     --white: #EEEEEE;
     --yellow: #ffd500;
     --dark-purple: #5f4085;
+    --black: #000000;
 }
 
 html {
@@ -42,7 +43,7 @@ a.underline:hover {
 
 body {
     background-color: var(--white);
-    color: var(--purple);
+    color: var(--black);
     margin: 0px;
     font-family: "Open Sans", "Arial", sans-serif;
 }
