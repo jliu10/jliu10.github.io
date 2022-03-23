@@ -107,18 +107,18 @@ ul.navBar {
 li.navBar {
     display: inline-block;
 }
-li a {
+.navBar li a {
     display: block;
     color: var(--white);
     padding: 10px 26px;
 }
-li a:hover {
+.navBar li a:hover {
     color: var(--yellow);
     background-color: var(--purple);
     border-top: solid var(--yellow) 4px;
     padding-top: 6px;
 }
-li a:active {
+.navBar li a:active {
     color: var(--yellow);
 }
 
