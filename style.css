@@ -127,6 +127,10 @@ center ul {
 .purp {
     color: var(--purple);
 }
+a.purp:hover {
+    color: var(--yellow);
+    background-color: var(--purple);
+}
 .white {
     color: var(--white);
 }
