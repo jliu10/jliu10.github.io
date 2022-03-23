@@ -51,9 +51,10 @@ body {
 
 /* color: #474747; */
 
-div {
-    /* margin-left: 0px;
-    margin-right: 0px; */
+div.textDiv {
+    margin-left: 16px;
+    margin-right: 16px;
+    border: solid var(--purple) 4px;
 }
 
 p {
