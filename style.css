@@ -26,17 +26,6 @@ html {
 a {
     text-decoration: none;
 }
-a.navLink {
-    /* display: block; */
-    text-decoration: none;
-    font-family: "Open Sans", "Arial", sans-serif;
-    padding-left: 8px;
-    padding-right: 8px;
-
-}
-a:hover {
-    color: var(--yellow);
-}
 a.underline:hover {
     text-decoration: underline;
 }
@@ -70,32 +59,12 @@ li {
     padding: 0px;
     border-top: 4px solid red;
 } */
-li a {
-    /* display: inline-block; */
-    color: var(--white);
-    padding: 0px;
-    /* border-top: 4px solid red; */
-}
 /*
 li.hanging {
     padding-left: 36px;
     text-indent: -36px;
 }
 */
-
-a span.navLink {
-    /* border-top: 4px solid var(--white); */
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 4px;
-}
-a span.navLink:active {
-    color: var(--yellow);
-}
-a span.navLink:hover {
-    border-top: 4px solid var(--yellow);
-    background-color: var(--purple);
-}
 
 center ul {
     list-style-type: none;
@@ -122,14 +91,35 @@ center ul {
     /*  */
 }
 
-.navBar {
-    position: -webkit-sticky;
+div.navBar {
     position: sticky;
     top: 0px;
-    border-top: 4px solid var(--dark-purple);
+    /* border-top: 4px solid var(--dark-purple); */
     background-color: var(--dark-purple);
-    font-size: 36px;
-    padding-bottom: 4px;
+    font-size: 30px;
+}
+ul.navBar {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+li.navBar {
+    display: inline-block;
+}
+li a {
+    display: block;
+    color: var(--white);
+    padding: 10px 26px;
+}
+li a:hover {
+    color: var(--yellow);
+    background-color: var(--purple);
+    border-top: solid var(--yellow) 4px;
+    padding-top: 6px;
+}
+li a:active {
+    color: var(--yellow);
 }
 
 .purp {
@@ -138,6 +128,7 @@ center ul {
 a.purp:hover {
     color: var(--white);
     background-color: var(--purple);
+    /* text-decoration: underline; */
 }
 .white {
     color: var(--white);
