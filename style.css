@@ -74,6 +74,12 @@ li a {
     padding: 0px;
     /* border-top: 4px solid red; */
 }
+/*
+li.hanging {
+    padding-left: 36px;
+    text-indent: -36px;
+}
+*/
 
 a span.navLink {
     /* border-top: 4px solid var(--white); */
