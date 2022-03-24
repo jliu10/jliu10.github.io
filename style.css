@@ -130,6 +130,14 @@ a.purp:hover {
     background-color: var(--purple);
     /* text-decoration: underline; */
 }
-.white {
+a.white {
     color: var(--white);
 }
+a.white:hover  {
+    color: var(--yellow);
+}
+
+/* .autofit {
+    max-width: 100%;
+    max-height: 100%;
+} */
