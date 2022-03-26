@@ -6,10 +6,11 @@
 */
 
 /* FONTS
-    Zilla Slab
-    Opens Sans
-    Futura
-    Metropolis
+    Zilla Slab, serif
+    Opens Sans, sans-serif
+    Futura, sans-serif
+    Metropolis, sans-serif
+    Conv_Gotham-Medium,sans-serif
 */
 
 :root {
@@ -97,8 +98,13 @@ li.hanging {
     min-width: 212px;
 }
 .dropdown-content a {
-    
+
 }
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 div.navBar {
     position: sticky;
@@ -127,9 +133,6 @@ li.navBar {
     background-color: var(--purple);
     border-top: solid var(--yellow) 4px;
     padding-top: 6px;
-}
-.navBar li a:active {
-    color: var(--yellow);
 }
 
 .purp {
