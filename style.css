@@ -98,13 +98,22 @@ li.hanging {
     min-width: 212px;
 }
 .dropdown-content a {
-
+    color: var(--white);
+    background-color: var(--dark-purple);
 }
 .dropdown-content a:hover {
-    background-color: #ddd;
+    color: var(--yellow);
+    background-color: var(--purple);
 }
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    color: var(--yellow);
+    border-top: solid var(--yellow) 4px;
+    padding-top: 6px;
+
+}
 
 div.navBar {
     position: sticky;
@@ -123,7 +132,7 @@ ul.navBar {
 li.navBar {
     display: inline-block;
 }
-.navBar li a {
+.navBar a {
     display: block;
     color: var(--white);
     padding: 10px 26px;
