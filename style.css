@@ -94,9 +94,10 @@ li.hanging {
     display: none;
     position: absolute;
     background-color: var(--dark-purple);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    min-width: 212px;
+}
+.dropdown-content a {
+    
 }
 
 div.navBar {
