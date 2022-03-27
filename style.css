@@ -90,18 +90,23 @@ li.hanging {
     display: inline-block;
 }
 .dropdown-content {
+    /* display: block; */
     display: none;
     position: absolute;
     background-color: var(--dark-purple);
     min-width: 212px;
 }
 .dropdown-content a {
-    color: var(--white);
-    display: block;
+    /* color: var(--white); */
+    /* display: block; */
 }
-.dropdown-content a:hover {
+.navBar .dropdown-content a:hover {
     color: var(--yellow);
     background-color: var(--purple);
+    border-top: none;
+    padding-top: 10px;
+    border-left: solid var(--yellow) 6px;
+    padding-left: 20px;
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -124,7 +129,7 @@ div.navBar {
 ul.navBar {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-align: center;
 }
 li.navBar {
@@ -135,7 +140,7 @@ li.navBar {
     color: var(--white);
     padding: 10px 26px;
 }
-.navBar li a:hover {
+.navBar a:hover {
     color: var(--yellow);
     background-color: var(--purple);
     border-top: solid var(--yellow) 4px;
