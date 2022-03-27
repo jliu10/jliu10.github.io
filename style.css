@@ -148,9 +148,9 @@ li.navBar {
     color: var(--purple);
 }
 a.purp:hover {
-    color: var(--white);
-    background-color: var(--purple);
-    /* text-decoration: underline; */
+    /* color: var(--white);
+    background-color: var(--purple); */
+    text-decoration: underline solid var(--dark-purple) 2px;
 }
 a.white {
     color: var(--white);
