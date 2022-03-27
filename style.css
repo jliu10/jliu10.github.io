@@ -95,6 +95,7 @@ li.hanging {
     position: absolute;
     background-color: var(--dark-purple);
     min-width: 212px;
+    text-align: left;
 }
 .dropdown-content a {
     /* color: var(--white); */
