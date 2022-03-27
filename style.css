@@ -141,6 +141,9 @@ li.navBar {
     border-top: solid var(--yellow) 4px;
     padding-top: 6px;
 }
+.navBar .active {
+    color: var(--yellow);
+}
 
 .purp {
     color: var(--purple);
