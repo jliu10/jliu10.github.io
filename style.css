@@ -83,8 +83,6 @@ li.hanging {
     font-family: "Open Sans", "Arial", sans-serif;
     margin-left: 36px;
     margin-top: 0px;
-    /* padding-top: 36px; */
-    /*  */
 }
 
 .dropdown {
@@ -99,7 +97,7 @@ li.hanging {
 }
 .dropdown-content a {
     color: var(--white);
-    background-color: var(--dark-purple);
+    display: block;
 }
 .dropdown-content a:hover {
     color: var(--yellow);
