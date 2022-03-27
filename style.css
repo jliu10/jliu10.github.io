@@ -111,11 +111,10 @@ li.hanging {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.dropdown:hover .dropbtn {
+.dropdown:hover .dropper {
     color: var(--yellow);
     border-top: solid var(--yellow) 4px;
     padding-top: 6px;
-
 }
 
 div.navBar {
