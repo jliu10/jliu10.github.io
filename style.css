@@ -96,6 +96,8 @@ li.hanging {
     background-color: var(--dark-purple);
     min-width: 212px;
     text-align: left;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 .dropdown-content a {
     /* color: var(--white); */
