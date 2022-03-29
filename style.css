@@ -110,6 +110,8 @@ li.hanging {
     padding-top: 10px;
     border-left: solid var(--yellow) 6px;
     padding-left: 20px;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
 }
 .dropdown:hover .dropdown-content {
     display: block;
