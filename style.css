@@ -98,6 +98,7 @@ li.hanging {
     text-align: left;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    overflow: hidden;
 }
 .dropdown-content a {
     /* color: var(--white); */
@@ -110,8 +111,8 @@ li.hanging {
     padding-top: 10px;
     border-left: solid var(--yellow) 6px;
     padding-left: 20px;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
+    /* border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit; */
 }
 .dropdown:hover .dropdown-content {
     display: block;
