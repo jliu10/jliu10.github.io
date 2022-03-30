@@ -93,7 +93,7 @@ li.hanging {
     /* display: block; */
     display: none;
     position: absolute;
-    background-color: var(--dark-purple);
+    background-color: var(--purple);
     min-width: 212px;
     text-align: left;
     border-bottom-left-radius: 8px;
@@ -118,7 +118,7 @@ li.hanging {
     display: block;
 }
 .dropdown:hover .dropper {
-    color: var(--yellow);
+    background-color: var(--purple);
     border-top: solid var(--yellow) 4px;
     padding-top: 6px;
 }
