@@ -10,7 +10,7 @@
 }
 
 function initialize() {
-    // grab the innerHTML of the object with the id "flashing-text"
+    // grab the innerHTML of the object with the id "altText"
     altText = document.getElementById("altText");
 }
 
