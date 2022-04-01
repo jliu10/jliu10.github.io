@@ -168,12 +168,12 @@ li.navBar {
 }
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 30%;
-  max-width: 30%;
-  padding: 0 4px;
+  flex: 50%;
+  max-width: 45%;
+  padding: 0 20px;
 }
 .column img {
-  margin-top: 8px;
+  margin-bottom: 40px;
   vertical-align: middle;
   width: 100%;
 }
@@ -189,18 +189,11 @@ li.navBar {
     max-width: 10%;
     height: inherit;
 }
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 800px) {
-  .column {
-    flex: 45%;
-    max-width: 45%;
-  }
-}
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
+@media (max-width: 850px) {
   .column {
     flex: 100%;
-    max-width: 100%;
+    max-width: 90%;
   }
 }
 
