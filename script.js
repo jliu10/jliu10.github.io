@@ -14,6 +14,7 @@ function initialize() {
     altText = document.getElementById("altText");
 }
 
+// Alternate text, cycling through elements in titles[]
 function changeText() {
     if(counter === 11) counter = 0;
     altText.innerHTML = titles[counter] + ".";
