@@ -17,12 +17,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Zilla+Slab&display=swap" rel="stylesheet">
 
-        <script src="script.js">
-        </script>
+        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     </head>
 
-    <body>
+    <body onLoad = "initialize();" onmousemove="updateMousePos(event)">
         <div style="background-color: #7851a9; padding-top: 36px;">
             <p class="bigText" style="color: #EEEEEE; margin-bottom: 12px;">Hi, I'm
                 <b><a class="white underline" href="https://www.linkedin.com/in/justin-liu-51504b200/" target="_blank" style="font-family: 'Arial';">Justin Liu</a></b>. I'm an
@@ -75,18 +75,26 @@
         my photos
         <br>
         i may or may not separate them into categories
+        <br>
+        hover photos to see their names (i may not have named some of them)
     </p>
 
     <!-- ********** GALLERY ********** -->
+    <!-- div following mouse when hovered over photos -->
+    <div id="cursorFollow">
+        <!-- style="display: none;" -->
+        photo
+    </div>
+
     <div class="row">
         <div class="column">
-            <img src="photos/IMG_4004.jpg">
-            <img src="photos/IMG_0851.jpg">
-            <img src="photos/IMG_0982.jpg">
+            <img src="photos/IMG_4004.jpg" onmouseover="showImageName(this)" onmouseout="hideImageName(this)">
+            <img src="photos/IMG_0851.jpg" onmouseover="showImageName(this)" onmouseout="hideImageName(this)">
+            <img src="photos/IMG_0982.jpg" onmouseover="showImageName(this)" onmouseout="hideImageName(this)">
         </div>
         <div class="column">
-            <img src="photos/Backyard view.jpg">
-            <img src="photos/Alien.jpg">    
+            <img src="photos/Backyard view.jpg" onmouseover="showImageName(this)" onmouseout="hideImageName(this)">
+            <img src="photos/Alien.jpg" onmouseover="showImageName(this)" onmouseout="hideImageName(this)">
         </div>
 
     </div>
