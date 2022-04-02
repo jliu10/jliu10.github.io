@@ -74,6 +74,17 @@ li.hanging {
 
 }
 
+#cursorFollow {
+    display: none;
+    border: solid var(--white) 2px;
+    color: var(--white);
+    background-color: var(--purple);
+    padding: 4px;
+    font-family: Zilla Slab, monospace;
+    position: absolute;
+    pointer-events: none; /* make itself 'unhoverable,' so text doesn't change when slightly hovering over self */
+}
+
 .boldText {
     font-family: "Arial", sans-serif;
     color: var(--purple);
@@ -128,11 +139,10 @@ li.hanging {
 div.navBar {
     position: sticky;
     top: 0px;
-    /* border-top: 4px solid var(--dark-purple); */
     background-color: var(--dark-purple);
     font-family: "Arial", sans-serif;
     font-size: 30px;
-    /* display: flex; */
+    z-index: 1;
 }
 ul.navBar {
     margin: 0;
