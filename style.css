@@ -187,18 +187,6 @@ li.navBar {
   vertical-align: middle;
   width: 100%;
 }
-.testFlex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
-}
-.testFlex img {
-    margin-top: 8px;
-    vertical-align: middle;
-    max-width: 10%;
-    height: inherit;
-}
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 850px) {
   .column {
@@ -207,12 +195,29 @@ li.navBar {
   }
 }
 
+/* ********** HOME PAGE LAYOUT ********** */
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.column1 {
+    flex: 50%;
+    max-width: 50%;
+}
+.column1 img {
+    display: block;
+    position: relative;
+    max-width: 70%;
+    height: auto;
+    padding-top: 36px;
+    margin: auto;
+}
+
 .purp {
     color: var(--purple);
 }
 a.purp:hover {
-    /* color: var(--white);
-    background-color: var(--purple); */
     text-decoration: underline solid var(--dark-purple) 2px;
 }
 a.white {
