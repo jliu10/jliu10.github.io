@@ -202,10 +202,14 @@ li.navBar {
     justify-content: center;
 }
 .column1 {
-    flex: 50%;
-    max-width: 50%;
+    flex: 60%;
+    max-width: 60%;
 }
-.column1 img {
+.column2 {
+    flex: 40%;
+    max-width: 40%;
+}
+.column2 img {
     display: block;
     position: relative;
     max-width: 70%;
