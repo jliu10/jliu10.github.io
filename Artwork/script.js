@@ -14,9 +14,6 @@ function makePhoto(item) {
     item.setAttribute('onmouseout', 'hideImageName(this)');
     item.setAttribute('loading','lazy');
 }
-function test() {
-    console.log("should be 4 of these");
-}
 
 function updateMousePos(e) {
     mouseX = e.pageX;
