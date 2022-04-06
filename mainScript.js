@@ -1,31 +1,17 @@
-//
-/*
-*/
-
-// Alternating text of my several title descriptions
-{
-    var interval = setInterval(changeText, 1000);
-    var counter = 1;
-    var titles = ["programmer", "NAV fan", "J. Cole hater", "photographer (kinda)", "poet (kinda)", "singer (kinda)", "high elo League of Legends player", "League of Legends warding master", "vegetarian", "broke college student", "human bean"];
-}
+console.log("mainScript has run");
 
 function initialize() {
-    // grab the innerHTML of the object with the id "altText"
-    // console.log("hi");
-    altText = document.getElementById("altText");
-    var navDropdowns = document.querySelectorAll('div.dropdown-content');
-
+    console.log("mainScript.initialize() has run");
+    var navDropdowns = document.querySelectorAll('div.dropdown');
+    navDropdowns.forEach(addHoverEvent);
     console.log("navDropdowns: " + navDropdowns.length);
     // navDropdowns.forEach(clip);
 }
 
-// Alternate text, cycling through elements in titles[]
-function changeText() {
-    if(counter === 11) counter = 0;
-    altText.innerHTML = titles[counter] + ".";
-    counter++;
+// Add onmouseover event to item
+function addHoverEvent(item) {
+    item.setAttribute('onmouseover', 'clip(this)');
 }
-
 // Shape navBar dropdown to cut off bottom right corner
 function clip(item) {
     item = item.querySelector('.dropdown-content');
