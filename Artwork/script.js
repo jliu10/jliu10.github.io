@@ -5,10 +5,10 @@ var mouseY = 0;
 function initialize() {
     cursorFollow = document.getElementById('cursorFollow');
     var images = document.querySelectorAll('div.column > img');
-    // images.forEach(test);
     images.forEach(makePhoto);
 }
 
+// Make photos hoverable
 function makePhoto(item) {
     item.setAttribute('onmouseover','showImageName(this)');
     item.setAttribute('onmouseout', 'hideImageName(this)');
