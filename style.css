@@ -98,6 +98,11 @@ li.hanging {
     margin-top: 0px;
 }
 
+/* EVERYTHING BELOW navBar */
+.body {
+    padding: 0px 100px;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -109,8 +114,8 @@ li.hanging {
     background-color: var(--purple);
     min-width: 212px;
     text-align: left;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    /* border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; */
     overflow: hidden;
 }
 .dropdown-content a {
