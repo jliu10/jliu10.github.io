@@ -216,7 +216,9 @@ li.navBar {
 }
 .column2 img {
     display: block;
-    position: relative;
+    /* position: relative; */
+    position: sticky;
+    top: 100px;
     max-width: 70%;
     height: auto;
     border-radius: 24px;
