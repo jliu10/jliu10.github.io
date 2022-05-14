@@ -229,9 +229,21 @@ li.navBar {
 .purp {
     color: var(--purple);
 }
-a.purp:hover {
-    text-decoration: underline solid var(--dark-purple) 2px;
+a.purp {
+    background-image: linear-gradient(var(--purple), var(--purple));
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
 }
+a.purp:hover,
+a.purp:focus {
+    /* text-decoration: underline solid var(--dark-purple) 2px; */
+    background-size: 100% 0.1em;
+    background-position-x: 0%;
+}
+
 a.white {
     color: var(--white);
 }
