@@ -239,8 +239,7 @@ a.purp {
 }
 a.purp:hover,
 a.purp:focus {
-    /* text-decoration: underline solid var(--dark-purple) 2px; */
-    background-size: 100% 0.1em;
+    background-size: 100% 0.2em;
     background-position-x: 0%;
 }
 
