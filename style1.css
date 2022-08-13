@@ -1,0 +1,37 @@
+/* COLORS
+    #7851a9 : Pi'erre purple
+    #EEEEEE : less white
+    #ffd500 : yellow
+    #5f4085 : dark purple
+*/
+
+/* FONTS
+    Zilla Slab, serif
+    Opens Sans, sans-serif
+    Futura, sans-serif
+    Metropolis, sans-serif
+    Conv_Gotham-Medium, sans-serif
+*/
+
+:root {
+    --purple: #7851a9;
+    --white: #EEEEEE;
+    --yellow: #ffd500;
+    --dark-purple: #5f4085;
+    --black: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+a.yellItal:hover {
+    color: var(--yellow);
+    font-style: italic;
+}
+a.underline:hover {
+    text-decoration: underline;
+}
