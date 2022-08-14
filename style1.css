@@ -31,6 +31,7 @@ a {
 a.yellItal:hover {
     color: var(--yellow);
     font-style: italic;
+    font-family: "Metropolis", sans-serif;
 }
 a.underline:hover {
     text-decoration: underline;
