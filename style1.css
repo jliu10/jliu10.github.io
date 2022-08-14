@@ -28,6 +28,9 @@ html {
 a {
     text-decoration: none;
 }
+a.yellItal {
+    color: var(--white);
+}
 a.yellItal:hover {
     color: var(--yellow);
     font-style: italic;
