@@ -27,13 +27,24 @@ html {
 
 a {
     text-decoration: none;
-}
-a.yellItal {
-    color: var(--white);
+    color: inherit;
 }
 a.yellItal:hover {
     color: var(--yellow);
     font-style: italic;
+}
+a.norm {
+    background-image: linear-gradient(var(--white), var(--white));
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+}
+a.norm:hover,
+a.norm:focus {
+    background-size: 100% 0.15em;
+    background-position-x: 0%;
 }
 
 div.info {
