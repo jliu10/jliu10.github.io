@@ -1,76 +1,58 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
     <head>
-        <title>Justin Liu's website</title>
-
-        <link rel="stylesheet" href="style1.css">
-        <!-- FONTSSSSSSSSSSSSSSSSSSSSSSSSSS -->
-        <!-- Zilla Slab -->
-        <!-- Open Sans -->
-        <!-- Silkscreen -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JUSTIN_TV</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Silkscreen&family=Zilla+Slab&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Cinzel+Decorative&family=Concert+One&family=DotGothic16&family=Henny+Penny&family=Major+Mono+Display&family=Press+Start+2P&family=Reggae+One&family=Russo+One&family=Silkscreen&family=Song+Myung&family=Syne+Mono&display=swap" rel="stylesheet"> 
+        
     </head>
-
-    <style>
-        .info > i {
-            font-size: 20px;
-        }
-        .info > b {
-            font-family: Silkscreen;
-        }
-    </style>
-
-    <body style="background-color: var(--purple); color: var(--white)">
-        <div style="text-align: center; font-size: 40px; padding: 48px; font-family: Metropolis, sans-serif">
-            <b>ABOUT JINSEN.</b>
-        </div>
-        <br><br>
-        <div class="info" style="padding-left: 240px; padding-right: 240px">
-            <b>Name: </b><i>Justin Liu</i>
-            <br>
-            <b>From: </b><i>Brooklyn, NY</i>
-            <br>
-            <b>Does: </b><i>Computer Science. Prefers Software Development. Also has web experience.</i>
-            <br>
-            <b>Graduated: </b><i>Stuyvesant High School</i>
-            <br>
-            <b>Attends: </b><i>Binghamton University > Watson School of Engineering</i>
-            <br>
-            <b>Job: </b><i>Starbucks Barista (loves it) @ Macy's in Kings Plaza</i>
-            <br>
-            <b>Languages: </b><i>Java, JavaScript, HTML/CSS, English, Spanish, Cantonese (don't test Spanish or Cantonese)</i>
-            <br>
-            <b>Has taken AP Spanish: </b><i>Yes</i>
-            <br>
-            <b>Likes: </b><i>Hip-hop, RnB, art</i>
-            <br>
-            <b>Loves: </b><i><a href="https://en.wikipedia.org/wiki/Nav_(rapper)" target="_blank" class="norm">NAV</a>.</i>
-            <br>
-            <br>
-
-
-            <!--
-            My name is Justin. I do computer science. I hope and intend
-            to focus on software development. I graduated from Stuyvesant High
-            School and attend Binghamton University, Watson School of
-            Engineering.
-            <br><br>
-            I'm from Brooklyn, NY and I work as a Barista at Starbucks, located
-            in the Macy's of Kings Plaza. I love it and it is the first of my
-            jobs that I enjoy.
-            <br><br>
-            I'm good with Java, but I also have web dev experience. Technically
-            a polyglot, as I speak English, Cantonese, and Spanish (I took AP
-            Spanish) but don't test me on my Cantonese or Spanish. I enjoy
-            music, mainly hip-hop and RnB I guess. I love
-            <a href="https://en.wikipedia.org/wiki/Nav_(rapper)" target="_blank" class="norm">NAV</a>.
-            -->
-
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="scripts.js" async defer></script>
+        <div class="background-overlay"></div>
+        <div class="tv">
+            <div class="tv-background">
+                <div class="screen">
+                    <div class="back-button">
+                        <a href="index.html" class="button" style="display: block; padding: 0">
+                            <div class="button-background" id="back"></div>
+                        </a>
+                    </div>
+                    <div class="window">
+                        <div class="window-background"></div>
+                        <div class="title">
+                            <b><i>About me</i></b>
+                        </div>
+                        <div class="info-area">
+                            <p>Hi 0.o i'm Justin. I'm studying Mathematics and Computer Science at the NYU Tandon School of Engineering, expecting to graduate in 2025. I want my work to have a meaningful, positive, and intimate impact on the world. I am interested in the arts as well, including drawing, painting, graphic design, UX design, fashion, music, poetry, and photography. I also like video games, but I mainly play just League of Legends right now.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tv-background-overlay"></div>
+            <div class="tv-frame">JUSTIN_TV</div>
+            <div class="ipod">
+                <audio id="music">
+                    <source id="music-source" src="playlist/PinkPantheress-Whisker.mp3" type="audio/mpeg">
+                </audio>
+                <div id="ipod-image"></div>
+                <button id="prev-song" onclick="prevSong()"></button>
+                <button id="next-song" onclick="nextSong()"></button>
+                <button id="pause-play" onclick="toggleMusic()"></button>
+            </div>
         </div>
     </body>
-
 </html>

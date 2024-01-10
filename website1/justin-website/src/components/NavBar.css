@@ -1,0 +1,18 @@
+.navbar {
+    background-color: blueviolet;
+    position: sticky;
+    top: 0px;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--yellow);
+}
+
+.nav-item {
+    padding-left: 25px;
+    padding-right: 25px;
+}

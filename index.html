@@ -1,132 +1,73 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
     <head>
-        <title>Justin Liu's website</title>
-        <style>
-        </style>
-
-        <link rel="stylesheet" href="style.css">
-<!-- FONTSSSSSSSSSSSSSSSSSSSSSSSSSS -->
-<!-- Zilla Slab -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JUSTIN_TV</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
-<!-- Open Sans -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Zilla+Slab&display=swap" rel="stylesheet">
-
-        <script src="homeScript.js" defer></script>
-        <script src="mainScript.js"></script>
-
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel+Decorative&family=Concert+One&family=Henny+Penny&family=Major+Mono+Display&family=Press+Start+2P&family=Reggae+One&family=Silkscreen&family=Song+Myung&family=Syne+Mono&display=swap" rel="stylesheet">
+        
     </head>
-
-    <body onLoad = "initialize(); homeInitialize()">
-        <div style="background-color: var(--purple); padding-top: 36px;">
-            <p class="bigText" style="color: #EEEEEE; margin-bottom: 12px;">Hi, I'm
-                <b><a class="white underline" href="https://www.linkedin.com/in/justin-liu-51504b200/" target="_blank" style="font-family: 'Arial';">Justin Liu</a></b>. I'm a
-            </p>
-            <b><span id="altText" class="bigText" style="color: #EEEEEE; font-family: 'Zilla Slab', serif; font-weight: 900px;">
-                software developer.
-            </span></b>
-            <br><br>
-        </div>
-
-        <!-- <?php include ‘navBar.php’;?> -->
-        <div class="navBar">
-            <ul class="navBar" style="color: var(--white);">
-                <b>
-                    <!-- <li class="navBar">navBar</li> -->
-                    <li class="navBar"><a class="active" href="index.html">Home</a></li>
-                    <li class="navBar">
-                        <div class="dropdown">
-                            <a class="dropper" href="Experience/index.html">Experience</a>
-                            <div class="dropdown-content">
-                                <a target="_blank" href="https://github.com/jliu10">GitHub</a>
-                                <a target="_blank" href="https://github.com/jliu10/APCSFinalProject">BTD project</a>
-                            </div>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="scripts.js" async defer></script>
+        <div class="background-overlay"></div>
+        <div class="tv">
+            <div class="tv-background">
+                <div class="screen">
+                    <div class="window" id="menu">
+                        <div class="window-background"></div>
+                        <div class="title">
+                            <b><i>JUSTIN LIU</i></b>
                         </div>
-                    </li>
-                    <li class="navBar">
-                        <div class="dropdown">
-                            <a class="dropper" href="Artwork/index.html">Artwork</a>
-                            <div class="dropdown-content">
-                                <a href="Artwork/photography.html">Photography</a>
-                                <a target="_blank" href="https://www.deviantart.com/exovite">Graphic design</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="navBar">
-                        <div class="dropdown">
-                            <a class="dropper" href="Misc/index.html">Misc.</a>
-                            <div class="dropdown-content">
-                                <a target="_blank" href="https://na.op.gg/summoners/na/ExoviteChinese">LoL</a>
-                                <a target="_blank" href="https://www.freetheocean.com">FreeTheOcean</a>
-                            </div>
-                        </div>
-                    </li>
-                </b>
-            </ul>
-        </div>
-
-        <!-- EVERYTHING BELOW navBar -->
-        <div class="body">
-            <!-- https://www.deviantart.com/exovite -->
-            <p>Some useful <a class="purp" target="_blank" href="https://www.w3schools.com/charsets/ref_utf_math.asp">math symbols</a>:
-                &#8704; &Exists; &NotExists; &naturals; &integers; &rationals; &Iopf; &reals; &Union; &Intersection; &#8709; &#8712;
-                &#8713; &#8721; &equiv; &sub; &sube; &cong; &delta; &theta; &#x3A6; &#8740; &#1578; &rarr; &rArr; &hArr; &#8655; &#x25A0;</p>
-            <p><a href="https://jliu10.github.io/index1.html">PROSPECTIVE NEW WEBSITE</a></p>
-            <section class="row1">
-                <div class="column1">
-                    <p style="margin-bottom: 0px;">
-                        <b class="boldText" style="font-size: 36px;">About me</b>
-                        <br><br>
-                        I started learning computer science in 2018, and I'm currently a freshman Computer Science major at <a class="purp" href="https://www.binghamton.edu/" target="_blank">Binghamton University</a>.
-                        I'm also a Software Developer Intern at <a class="purp" href="https://www.patchtheproducer.com/">Patch The Producer LLC</a>.
-                        <ul style="margin-left: 16px;">
-                            <li><b>Hobbies: </b>sleeping, eating, singing, gaming, photographing</li>
-                            <br><br>
-                            <li><b>Achievements: </b>2022 Binghamton ACM Final Programming Competition - Top Freshman/Sophomore, Watson College Dean’s List for Fall 2021, Stuyvesant High School Poetry Award, <a class="purp" href="https://ccnypoetryoutreach.wixsite.com/pip49/high-school-poets" target="_blank">2021 CCNY NYC High School Poetry Contest - Honorable Mention</a></li>
-                            <br><br>
-                            <li><b>Skills: </b>Java, Python, HTML/CSS (I built this site), data structures, algorithms, OOP, Processing, mathematics, <a class="purp" href="https://www.deviantart.com/exovite" target="_blank">graphic design</a>, Spanish (kinda)</li>
-                            <br><br>
-                            <li><b>Things I'm learning: </b>JavaScript, singing, drawing</li>
-                            <br><br>
-                            <li><b>Things I wanna learn: </b>Swift, Lua, PHP, producing</li>
+                        <ul style="position: relative;">
+                            <li>
+                                <a href="about.html" class="button">
+                                    <div class="button-outline"></div>
+                                    <div class="button-background"></div>
+                                    About
+                               </a>
+                            </li>
+                            <li>
+                                <a href="experience.html" class="button">
+                                    <div class="button-outline"></div>
+                                    <div class="button-background"></div>
+                                    Experience
+                               </a>
+                            </li>
+                            <li>
+                                <a href="https://www.deviantart.com/exovite" target="_blank" class="button">
+                                    <div class="button-outline"></div>
+                                    <div class="button-background"></div>
+                                    Artwork
+                               </a>
+                            </li>
                         </ul>
-                    </p>
-                    <p>
-                        Shout out to the homies
-                        <a class="purp" href="https://www.linkedin.com/in/matthew-mentis-cort-374430203/" target="_blank"><b>Matthew Mentis-Cort</b></a> &
-                        <a class="purp" href="https://cullenlye.github.io/" target="_blank"><b>Cullen Ye</b></a>.
-                    </p>
+                    </div>
                 </div>
-                <div class="column2">
-                    <img src="images/justin_nyc1.jpg" alt="pic of me">
-                </div>
-            </section>
-                <!-- W:H RATIO: 3:4 -->
-            <br>
-            <section>
-                <p>
-                    <b class = "boldText" style="font-size: 36px";>Origins</b>
-                    <br><br>
-                    In 2003, on the 13th day of October, I emerged from my mother's womb. I was born and raised in Brooklyn, New York, and have lived
-                    there ever since, until I moved to my university. I attended and graduated from <a class="purp" href="https://www.schools.nyc.gov/schools/K206" target="_blank">P.S. 206</a>,
-                    <a class="purp" href="https://www.is234.com/" target="_blank">I.S. 234</a>, and <a class="purp" href="https://stuy.enschool.org/" target="_blank">Stuyvesant High School</a>.
-                </p>
-            </section>
-
-            <p>
-                Are you a broke college student? Then under absolutely NO circumstances should you use
-                <a class="purp" href="https://z-lib.org/" target="_blank"><b>THIS WEBSITE</b></a>,
-                which contains millions of freely accessible texts (probably including the textbooks your
-                school tells you to pay hundreds for).
-            </p>
-
-            <p style="text-align: center;"><i>more to come<i/></p>
+            </div>
+            <div class="tv-background-overlay"></div>
+            <div class="tv-frame">JUSTIN_TV</div>
+            <div class="ipod">
+                <audio id="music">
+                    <source id="music-source" src="playlist/PinkPantheress-Whisker.mp3" type="audio/mpeg">
+                </audio>
+                <div id="ipod-image"></div>
+                <button id="prev-song" onclick="prevSong()"></button>
+                <button id="next-song" onclick="nextSong()"></button>
+                <button id="pause-play" onclick="toggleMusic()"></button>
+            </div>
         </div>
     </body>
-
 </html>

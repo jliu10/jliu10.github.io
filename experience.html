@@ -1,32 +1,90 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
     <head>
-        <title>Justin Liu's website</title>
-
-        <link rel="stylesheet" href="style1.css">
-        <!-- FONTSSSSSSSSSSSSSSSSSSSSSSSSSS -->
-        <!-- Zilla Slab -->
-        <!-- Open Sans -->
-        <!-- Silkscreen -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JUSTIN_TV</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Silkscreen&family=Zilla+Slab&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Cinzel+Decorative&family=Concert+One&family=DotGothic16&family=Henny+Penny&family=Major+Mono+Display&family=Press+Start+2P&family=Reggae+One&family=Russo+One&family=Silkscreen&family=Song+Myung&family=Syne+Mono&display=swap" rel="stylesheet"> 
+        
     </head>
-
-    <body style="background-color: var(--purple); color: var(--white)">
-        <div style="text-align: center; font-size: 40px; padding: 48px; font-family: Metropolis, sans-serif">
-            <b>HIRE JINSEN.</b>
-        </div>
-        <br><br>
-        <div class="info" style="padding-left: 240px; padding-right: 240px">
-            <b><a class="yellItal" href="https://github.com/jliu10" target="_blanks">GitHub</a></b>
-            <br><br>
-            <b>Resum&eacute (I've also worked at Rite Aid):</b>
-            <br>
-            <iframe src="CS Resume.pdf" width="100%" height="800px"></iframe>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="scripts.js" async defer></script>
+        <div class="background-overlay"></div>
+        <div class="tv">
+            <div class="tv-background">
+                <div class="screen">
+                    <div class="back-button">
+                        <a href="index.html" class="button" style="display: block; padding: 0">
+                            <div class="button-background" id="back"></div>
+                        </a>
+                    </div>
+                    <div class="window">
+                        <div class="window-background"></div>
+                        <div class="title">
+                            <b><i>Experience</i></b>
+                        </div>
+                        <div class="info-area">
+                            <p>This website is still a WIP btw ;D.</p>
+                            <button class="link" onclick="displayProjects()">
+                                <span class="button-outline"></span>
+                                <span class="button-background"></span>
+                                Projects
+                            </button>
+                            <button class="link">
+                                <span class="button-outline"></span>
+                                <span class="button-background"></span>
+                                Internships
+                            </button>
+                            <button class="link">
+                                <span class="button-outline"></span>
+                                <span class="button-background"></span>Jobs
+                            </button>
+                            <p>For my info you can click the links at the bottom.</p>
+                        </div>
+                        <div class="footer">
+                            <a href="https://github.com/jliu10" target="_blank">GitHub</a>
+                            <a href="resumes/CS Resume.pdf" target="_blank">SWE Resume</a>
+                            <a href="resumes/UX Resume.pdf" target="_blank">UX Resume</a>
+                        </div>
+                    </div>
+                    <button id="outside-window" onclick="exitWindow()"></button>
+                    <div class="info-window" id="projects">
+                        <div class="top-bar"></div>
+                        <span class="info-title">Projects</span>
+                        <button class="exit-button" onclick="exitWindow()">
+                            X
+                        </button>
+                        <div class="info-window-area">
+                            WORK IN PROGRESS
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="tv-background-overlay"></div>
+            <div class="tv-frame">JUSTIN_TV</div>
+            <div class="ipod">
+                <audio id="music">
+                    <source id="music-source" src="playlist/PinkPantheress-Whisker.mp3" type="audio/mpeg">
+                </audio>
+                <div id="ipod-image"></div>
+                <button id="prev-song" onclick="prevSong()"></button>
+                <button id="next-song" onclick="nextSong()"></button>
+                <button id="pause-play" onclick="toggleMusic()"></button>
+            </div>
         </div>
     </body>
-
 </html>

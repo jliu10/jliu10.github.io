@@ -1,0 +1,59 @@
+var music = document.getElementById("music");
+const playlist = ["PinkPantheress-Whisker", "PinkPantheress-Its_fine", "PinkPantheress-Your_eyes", "Aventura-Mi_Corazoncito"];
+var song = -1;
+var iPodImage = document.getElementById("ipod-image");
+var musicSource = document.getElementById("music-source");
+var projectsWindow = document.getElementById("projects");
+var outsideWindow = document.getElementById("outside-window");
+
+function mod(n, m) {
+    return ((n % m) + m) % m;
+}
+
+function toggleMusic() {
+    if (music.paused) {
+        if (song == -1) {
+            song = 0;
+            iPodImage.style.backgroundImage = `url(playlist/${playlist[song]}.jpg)`;
+        }
+        music.play();
+    } else {
+        music.pause();
+    }
+}
+
+function nextSong() {
+    song = mod( (song + 1), playlist.length);
+    console.log(song);
+    musicSource.src = `playlist/${playlist[song]}.mp3`;
+    iPodImage.style.backgroundImage = `url(playlist/${playlist[song]}.jpg)`;
+    music.currentTime = 0;
+    music.load();
+    music.play();
+}
+
+function prevSong() {
+    song = mod( (song - 1), playlist.length);
+    console.log(song);
+    musicSource.src = `playlist/${playlist[song]}.mp3`;
+    iPodImage.style.backgroundImage = `url(playlist/${playlist[song]}.jpg)`;
+    music.currentTime = 0;
+    music.load();
+    music.play();
+}
+
+music.addEventListener("ended", nextSong);
+
+function displayProjects() {
+    console.log("Displaying Projects");
+    outsideWindow.style.display = 'block';
+    projectsWindow.style.display = 'block';
+}
+
+function exitWindow() {
+    console.log("Exiting window");
+    outsideWindow.style.display = 'none';
+    projectsWindow.style.display = 'none';
+    // internshipsWindow.style.display = 'none';
+    // jobsWindow.style.display = 'none';
+}
