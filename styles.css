@@ -360,6 +360,11 @@ button.link {
     font-family: 'DotGothic16', sans-serif;
 }
 
+.info-window-area a:hover {
+    text-decoration: underline 2px;
+    cursor: url("images/roblox_pointer.png"), auto;
+}
+
 .footer {
     position: absolute;
     bottom: 0%;
