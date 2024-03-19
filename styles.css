@@ -112,7 +112,7 @@ ul {
     gap: 16px;
 }
 
-.info-area ul.experience {
+.info-area > ul.experience {
     display: flex;
     flex-direction: row;
     top: 0;
@@ -362,7 +362,7 @@ button.link {
 
 .info-window-area {
     position: absolute;
-    width: 100%;
+    width: 95%;
     height: 90%;
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
@@ -371,6 +371,9 @@ button.link {
     display: grid;
     color: whitesmoke;
     font-family: 'DotGothic16', sans-serif;
+    padding: 4px;
+    transform: translateX(-50%);
+    left: 50%;
 }
 
 .info-window-area a:hover {
@@ -392,6 +395,18 @@ button.link {
 .footer a:hover{
     text-decoration: underline 2px;
     cursor: url("images/roblox_pointer.png"), auto;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 8px;
+}
+
+.project-grid > a {
+    padding: 8px;
+    border: white solid 2px;
+    border-radius: 6px;
 }
 
 .project-card {
