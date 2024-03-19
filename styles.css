@@ -363,7 +363,7 @@ button.link {
 .info-window-area {
     position: absolute;
     width: 95%;
-    height: 90%;
+    height: 88%;
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
     top: 10%;
@@ -374,6 +374,7 @@ button.link {
     padding: 4px;
     transform: translateX(-50%);
     left: 50%;
+    grid-gap: 24px;
 }
 
 .info-window-area a:hover {
