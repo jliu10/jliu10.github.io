@@ -385,6 +385,7 @@ button.link {
     transform: translateX(-50%);
     left: 50%;
     grid-gap: 24px;
+    padding-top: 8px;
 }
 
 .info-window-area a:hover {
@@ -425,7 +426,7 @@ button.link {
 }
 
 ul.bulleted {
-    list-style-type: disc;
+    list-style-type: square;
     display: block;
     top: 0;
 }
@@ -433,4 +434,27 @@ ul.bulleted {
 ul.bulleted > li {
     display: list-item;
     padding: 4px;
+}
+
+span.internship-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+span.logo {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#lockheed {
+    background-image: url('images/Lockheed_Martin_logo.png');
+}
+
+#patch {
+    background-image: url('images/Patch_The_Producer_logo.jpg');
 }
