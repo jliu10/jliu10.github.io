@@ -124,7 +124,7 @@ li {
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 15px;
+    padding: 8px;
     width: 80%;
 }
 
@@ -265,6 +265,10 @@ p {
 #menu {
     left: 25%;
     width: 50%;
+}
+
+#menu > ul {
+    font-family: 'DotGothic16', sans-serif;
 }
 
 .info-area {
