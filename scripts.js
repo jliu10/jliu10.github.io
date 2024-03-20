@@ -6,12 +6,17 @@ var musicSource = document.getElementById("music-source");
 var projectsWindow = document.getElementById("projects");
 var internshipsWindow = document.getElementById("internships");
 var outsideWindow = document.getElementById("outside-window");
+var iPodImageText = iPodImage.firstElementChild;
+var iPodInterval = setInterval(blinkIPodText, 1000);
 
 function mod(n, m) {
     return ((n % m) + m) % m;
 }
 
 function toggleMusic() {
+    clearInterval(iPodInterval);
+    console.log("Interval cleared");
+    iPodImageText.style.opacity = 0;
     if (music.paused) {
         if (song == -1) {
             song = 0;
@@ -63,4 +68,9 @@ function exitWindow() {
     projectsWindow.style.display = 'none';
     internshipsWindow.style.display = 'none';
     // jobsWindow.style.display = 'none';
+}
+
+function blinkIPodText() {
+    console.log("Blink");
+    iPodImageText.style.opacity = (iPodImageText.style.opacity == 1) ? 0 : 1;
 }
