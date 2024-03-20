@@ -4,6 +4,7 @@ var song = -1;
 var iPodImage = document.getElementById("ipod-image");
 var musicSource = document.getElementById("music-source");
 var projectsWindow = document.getElementById("projects");
+var jobsWindow = document.getElementById("jobs");
 var internshipsWindow = document.getElementById("internships");
 var outsideWindow = document.getElementById("outside-window");
 var iPodImageText = iPodImage.firstElementChild;
@@ -62,12 +63,18 @@ function displayInternships() {
     internshipsWindow.style.display = 'block';
 }
 
+function displayJobs() {
+    console.log("Displaying Jobs");
+    outsideWindow.style.display = 'block';
+    jobsWindow.style.display = 'block';
+}
+
 function exitWindow() {
     console.log("Exiting window");
     outsideWindow.style.display = 'none';
     projectsWindow.style.display = 'none';
     internshipsWindow.style.display = 'none';
-    // jobsWindow.style.display = 'none';
+    jobsWindow.style.display = 'none';
 }
 
 function blinkIPodText() {

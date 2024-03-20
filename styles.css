@@ -373,7 +373,7 @@ button.link {
 .info-window-area {
     position: absolute;
     width: 95%;
-    height: 88%;
+    height: 86%;
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
     top: 10%;
@@ -436,7 +436,7 @@ ul.bulleted > li {
     padding: 4px;
 }
 
-span.internship-head {
+span.position-head {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -457,4 +457,24 @@ span.logo {
 
 #patch {
     background-image: url('images/Patch_The_Producer_logo.jpg');
+}
+
+#nyu {
+    background-image: url('images/NYU_logo.png');
+}
+
+#starbucks {
+    background-image: url('images/Starbucks_logo.png');
+}
+
+#rite_aid {
+    background-image: url('images/Rite_Aid_logo.jpg');
+}
+
+#kings_bay_y {
+    background-image: url('images/Kings_Bay_Y_logo.png');
+}
+
+#david_m_peterson_pc {
+    background-image: url('images/David_M_Peterson_PC_logo.jpg');
 }
