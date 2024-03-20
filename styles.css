@@ -413,3 +413,14 @@ button.link {
 .project-card {
 
 }
+
+ul.bulleted {
+    list-style-type: disc;
+    display: block;
+    top: 0;
+}
+
+ul.bulleted > li {
+    display: list-item;
+    padding: 4px;
+}

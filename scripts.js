@@ -4,6 +4,7 @@ var song = -1;
 var iPodImage = document.getElementById("ipod-image");
 var musicSource = document.getElementById("music-source");
 var projectsWindow = document.getElementById("projects");
+var internshipsWindow = document.getElementById("internships");
 var outsideWindow = document.getElementById("outside-window");
 
 function mod(n, m) {
@@ -50,10 +51,16 @@ function displayProjects() {
     projectsWindow.style.display = 'block';
 }
 
+function displayInternships() {
+    console.log("Displaying Internships");
+    outsideWindow.style.display = 'block';
+    internshipsWindow.style.display = 'block';
+}
+
 function exitWindow() {
     console.log("Exiting window");
     outsideWindow.style.display = 'none';
     projectsWindow.style.display = 'none';
-    // internshipsWindow.style.display = 'none';
+    internshipsWindow.style.display = 'none';
     // jobsWindow.style.display = 'none';
 }
