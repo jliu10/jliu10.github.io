@@ -8,7 +8,7 @@ var jobsWindow = document.getElementById("jobs");
 var internshipsWindow = document.getElementById("internships");
 var outsideWindow = document.getElementById("outside-window");
 var iPodImageText = iPodImage.firstElementChild;
-var iPodInterval = setInterval(blinkIPodText, 1000);
+var iPodInterval = setInterval(blinkIPodText, 100);
 
 function mod(n, m) {
     return ((n % m) + m) % m;
@@ -78,6 +78,17 @@ function exitWindow() {
 }
 
 function blinkIPodText() {
-    console.log("Blink");
-    iPodImageText.style.opacity = (iPodImageText.style.opacity == 1) ? 0 : 1;
+    // console.log("Blink");
+    // iPodImageText.style.opacity = (iPodImageText.style.opacity == 1) ? 0 : 1;
+    // val = -0.1;
+    if (iPodImageText.style.opacity == 1) {
+        val = -0.1;
+        // console.log(`Set val to ${val} (decreasing)`)
+    }
+    if (iPodImageText.style.opacity <= 0.1) {
+        val = 0.1;
+        // console.log(`Set val to ${val} (increasing)`)
+    }
+    // console.log(`Now will try to add ${parseFloat(iPodImageText.style.opacity)} with ${val}`)
+    iPodImageText.style.opacity = (parseFloat(iPodImageText.style.opacity) + val);
 }
