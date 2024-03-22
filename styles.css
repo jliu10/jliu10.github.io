@@ -448,7 +448,10 @@ span.logo {
     height: 48px;
     background-size: cover;
     background-position: center center;
+}
 
+#google {
+    background-image: url('images/Google_logo.png');
 }
 
 #lockheed {
