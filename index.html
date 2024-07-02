@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Cinzel+Decorative&family=Concert+One&family=DotGothic16&family=Henny+Penny&family=Major+Mono+Display&family=Press+Start+2P&family=Reggae+One&family=Russo+One&family=Silkscreen&family=Song+Myung&family=Syne+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DotGothic16&family=Jacquard+12&family=Tiny5&display=swap" rel="stylesheet">
+        
         
     </head>
     <body>
@@ -22,55 +23,22 @@
         <![endif]-->
         
         <script src="scripts.js" async defer></script>
-        <div class="background-overlay"></div>
-        <div class="tv">
-            <div class="tv-background">
-                <div class="screen">
-                    <div class="window" id="menu">
-                        <div class="window-background"></div>
-                        <div class="title">
-                            <b><i>JUSTIN LIU</i></b>
-                        </div>
-                        <ul style="position: relative;">
-                            <li>
-                                <a href="about.html" class="button">
-                                    <div class="button-outline"></div>
-                                    <div class="button-background"></div>
-                                    <b>About</b>
-                               </a>
-                            </li>
-                            <li>
-                                <a href="experience.html" class="button">
-                                    <div class="button-outline"></div>
-                                    <div class="button-background"></div>
-                                    <b>Experience</b>
-                               </a>
-                            </li>
-                            <li>
-                                <a href="https://www.deviantart.com/exovite" target="_blank" class="button">
-                                    <div class="button-outline"></div>
-                                    <div class="button-background"></div>
-                                    <b>Artwork</b>
-                               </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        
+        <div class="main">
+            <div class="justin">xxx Justin "Jinsen" Liu xxx</div>
+            <div class="break"></div>
+            <div class="navbar">
+                <span><a href="index.html" class="active">About</a></span>
+                <span><a href="experience.html">Experience</a></span>
+                <span><a href="artwork.html">Artwork</a></span>
             </div>
-            <div class="tv-background-overlay"></div>
-            <div class="tv-frame">JUSTIN_TV</div>
-            <div class="ipod">
-                <audio id="music">
-                    <source id="music-source" src="playlist/PinkPantheress-Whisker.mp3" type="audio/mpeg">
-                </audio>
-                <div id="ipod-image">
-                    <div style="opacity: 1">
-                        PLAY ME
-                    </div>
-                </div>
-                <button id="prev-song" onclick="prevSong()"></button>
-                <button id="next-song" onclick="nextSong()"></button>
-                <button id="pause-play" onclick="toggleMusic()"></button>
+
+            <div class="break"></div>
+            <div class="about-section">
+                <img src="images/eye1.png" alt="Eye of Horus" width="250px" height="250px">
+                <p>
+                    My name is Justin. I live in Brooklyn and study Math and Computer Science at NYU Tandon. Currently, I am a SWE Intern at Google in NYC. I like math, code, video games, art, and music.
+                </p>
             </div>
         </div>
     </body>

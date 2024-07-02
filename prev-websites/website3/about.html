@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JUSTIN_TV</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Cinzel+Decorative&family=Concert+One&family=DotGothic16&family=Henny+Penny&family=Major+Mono+Display&family=Press+Start+2P&family=Reggae+One&family=Russo+One&family=Silkscreen&family=Song+Myung&family=Syne+Mono&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="scripts.js" async defer></script>
+        <div class="background-overlay"></div>
+        <div class="tv">
+            <div class="tv-background">
+                <div class="screen">
+                    <div class="back-button">
+                        <a href="index.html" class="button" style="display: block; padding: 0">
+                            <div class="button-background" id="back"></div>
+                        </a>
+                    </div>
+                    <div class="window">
+                        <div class="window-background"></div>
+                        <div class="title">
+                            <b><i>About me</i></b>
+                        </div>
+                        <div class="info-area">
+                            <p>Hi 0.o i'm Justin. I'm studying Mathematics and Computer Science at the NYU Tandon School of Engineering, expecting to graduate in 2025. I want my work to have a meaningful, positive, and intimate impact on the world. I am interested in the arts as well, including drawing, painting, graphic design, UX design, fashion, music, poetry, and photography. I also like video games, but I mainly play just League of Legends right now.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tv-background-overlay"></div>
+            <div class="tv-frame">JUSTIN_TV</div>
+            <div class="ipod">
+                <audio id="music">
+                    <source id="music-source" src="playlist/PinkPantheress-Whisker.mp3" type="audio/mpeg">
+                </audio>
+                <div id="ipod-image">
+                    <div style="opacity: 1">
+                        PLAY ME
+                    </div>
+                </div>
+                <button id="prev-song" onclick="prevSong()"></button>
+                <button id="next-song" onclick="nextSong()"></button>
+                <button id="pause-play" onclick="toggleMusic()"></button>
+            </div>
+        </div>
+    </body>
+</html>

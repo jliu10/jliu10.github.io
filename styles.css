@@ -1,483 +1,172 @@
+html {
+    background-color: rgb(19, 19, 19);
+    color: rgb(234, 234, 234);
+    font-size: 30px;
+}
+
 body {
-    background-image: url('images/weirdcore.jpg');
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+    font-family: "Tiny5";
 }
 
-.background-overlay {
-    position: absolute;
-    background-image: url('images/vhs_overlay.gif');
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    background-size: 100% 100%;
-    mix-blend-mode: lighten;
-}
-
-.tv {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.tv-frame {
-    position: absolute;
-    width: 1000px;
-    height: 666px;
-    background-image: url('images/tv_frame.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    visibility: visible;
-    /* opacity: 70%;   */
-    padding-left: 10px; 
-    padding-top: 10px;
-    pointer-events: none;
-}
-
-.tv-background-overlay {
-    position: absolute;
-    background-image: url('images/pixel_overlay.jpeg');
-    background-repeat: no-repeat;
-    background-size: 95% 95%;
-    width: 1000px;
-    height: 666px;
-    mix-blend-mode: overlay;
-    pointer-events: none;
-}
-
-.tv-background {
-    position: absolute;
-    background-position: center;
-    background-image: url('images/purple_water.gif');
-    background-repeat: no-repeat;
-    background-size: 95% 95%;
-    width: 1000px;
-    height: 666px;
-}
-
-.screen {
-    position: relative;
-    cursor: url('images/roblox_cursor.png'), auto;
-    width: 74%;
-    height: 83%;
-    margin-left: 5%;
-    margin-top: 5%;
-    display: grid;
-}
-
-.title {
-    color: white;
+.justin {
+    font-family: "Jacquard 12";
     font-size: 48px;
-    font-family: 'Song Myung', serif;
-    position: relative;
-    /* transform-origin: 50% 50%;  */
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    top: 5%;
-    margin-bottom: 10px;
+    padding: 16px;
 }
 
-.window {
-    position: relative;
-    /* align-items: center; */
-    justify-content: center;
-    top: 10%;
-    left: 15%;
-    width: 70%;
-    height: 80%;
-    overflow: hidden;
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar {
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 36px;
+    width: 600px;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
 }
 
 a {
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: whitesmoke;
+    color: inherit;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
-    position: relative;
-    top: 9%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+a:hover {
+    text-decoration: underline;
 }
 
-.info-area > ul.experience {
-    display: flex;
-    flex-direction: row;
-    top: 0;
+a.active {
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
 }
 
-li {
-    display: flex;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 8px;
-    width: 80%;
+span > a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 p {
-    margin-top: 0px;
+    padding: 24px;
 }
 
-.button {
-    text-align: center;
-    color: whitesmoke;
-    cursor: url("images/roblox_pointer.png"), auto;
-    font-size: 36px;
-    padding: 8px;
-}
-
-.button-background {
-    position: absolute;
-    border-radius: 9px;
-    background-image: linear-gradient(white, black);
-    /* border: double 4px transparent;
-    background-origin: border-box;
-    background-clip: padding-box, border-box; */
-    opacity: 50%;
-    width: 100%;
-    height: 100%;
-    mix-blend-mode: overlay;
-}
-
-.button-background:hover {
-    background-image: none;
-    background-color: white;
-    box-shadow: 0 0 10px 10px whitesmoke;
-}
-
-.button-outline {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: solid 2px #ddd;
-    opacity: 60%;
-    /* border-image-source: linear-gradient(white, #575757); */
-    /* border-image-source: urL("images/metal_gradient.jpg"); */
-    /* border-image-slice: 1; */
-    border-radius: 9px;
-    /* background-image: image(black), linear-gradient(white, #575757);
-    border: double 4px transparent; */
-    /* background-origin: border-box;
-    background-clip: padding-box, border-box; */
-}
-
-.window-background {
-    position: absolute;
-    background-color: black;
-    border-radius: 25px;
-    opacity: 50%;
-    width: 100%;
-    height: 100%;
-    mix-blend-mode: overlay;
-    pointer-events: none;
-}
-
-.ipod {
-    position: absolute;
-    background-image: url('images/ipod.png');
-    background-repeat: no-repeat;
-    width: 220px;
-    height: 300px;
-    background-size: 100% 100%;
-    bottom: 10px;
-    left: 300px;
-    /* display: flex; */
-    /* justify-content: center; */
-}
-
-#ipod-image {
-    position: absolute;
-    /* background-image: url('images/PinkPantheress-Whisker.jpg'); */
-    background-repeat: no-repeat;
-    width: 165px;
-    height: 110px;
-    left: 14%;
-    top: 6%;
-    background-size: 100% 100%;
+.about-section {
+    width: 800px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: larger;
-    font-family: 'DotGothic16', sans-serif;
 }
 
-#pause-play {
-    width: 40px;
-    height: 30px;
-    position: absolute;
-    top: 225px;
-    cursor: pointer;
-    opacity: 0;
-    left: 95px;
-}
-
-#prev-song {
-    width: 40px;
-    height: 30px;
-    position: absolute;
-    top: 190px;
-    cursor: pointer;
-    opacity: 0;
-    left: 50px;
-}
-
-#next-song {
-    width: 40px;
-    height: 30px;
-    position: absolute;
-    top: 190px;
-    cursor: pointer;
-    opacity: 0;
-    left: 135px;
-}
-
-.back-button {
-    background-image: url("images/back_arrow.png");
-    background-repeat: none;
-    background-size: 100% 100%;
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    top: 30px;
-    left: 20px;
-}
-
-#back {
-    background-image: none;
-    background-color: black;
-    border-radius: 9px;
-}
-
-#back:hover {
-    /* background-image: linear-gradient(white, black); */
-    opacity: 0.3;
-}
-
-#menu {
-    left: 25%;
-    width: 50%;
-}
-
-#menu > ul {
-    font-family: 'DotGothic16', sans-serif;
-}
-
-.info-area {
-    color: white;
-    margin: 16px;
-    padding: 4px;
-    font-size: 20px;
-    /* font-family: 'Song Myung', serif; */
-    font-family: 'DotGothic16', sans-serif;
-    /* font-family: 'Silkscreen', sans-serif; */
-    height: 75%;
-    overflow: scroll;
-    position: absolute;
-}
-
-button.link {
-    position: relative;
-    justify-items: center;
-    align-items: center;
-    display: inline grid;
-    padding: 8px;
-    background: none;
-    border: none;
-    color: whitesmoke;
-    font-family: 'DotGothic16', sans-serif;
-    cursor: url("images/roblox_pointer.png"), auto;
-    font-size: 24px;
-}
-
-.info-window-screen {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-#outside-window {
-    opacity: 0;
-    cursor: url("images/roblox_cursor.png"), auto;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-.info-window {
-    position: absolute;
-    width: 90%;
-    height: 80%;
-    background-color: rgb(70, 1, 138);
-    justify-self: center;
-    align-self: center;
-    opacity: .9;
-    display: none;
-    border-radius: 9px;
-}
-
-.top-bar {
-    position: absolute;
-    width: 100%;
-    height: 10%;
-    background-image: linear-gradient(white, #424242);
-    mix-blend-mode: overlay;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-}
-
-.info-title {
-    position: absolute;
-    color: whitesmoke;
-    padding: 8px;
-    font-family: 'DotGothic16', sans-serif;
-    font-size: 20px;
-    height: 10%;
-}
-
-.exit-button {
-    position: absolute;
-    right: 0%;
-    height: 10%;
-    aspect-ratio: 1;
-    background: none;
-    color: white;
-    font-family: 'DotGothic16', sans-serif;
-    font-size: 20px;
-    border-top-right-radius: 9px;
-    cursor: url("images/roblox_pointer.png"), auto;
-    border-width: 1px;
-}
-
-.exit-button:hover {
-    font-weight: bold;
-    border-width: 2px;
-}
-
-.info-window-area {
-    position: absolute;
-    width: 95%;
-    height: 86%;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    top: 10%;
-    overflow: scroll;
-    display: grid;
-    color: whitesmoke;
-    font-family: 'DotGothic16', sans-serif;
-    padding: 4px;
-    transform: translateX(-50%);
-    left: 50%;
-    grid-gap: 24px;
-    padding-top: 8px;
-}
-
-.info-window-area a:hover {
-    text-decoration: underline 2px;
-    cursor: url("images/roblox_pointer.png"), auto;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
-    height: 10%;
-    display: flex;
-    color: whitesmoke;
-    font-family: 'DotGothic16', sans-serif;
-    justify-content: space-evenly;
-}
-
-.footer a:hover{
-    text-decoration: underline 2px;
-    cursor: url("images/roblox_pointer.png"), auto;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 8px;
-}
-
-.project-grid > a {
-    padding: 8px;
-    border: white solid 2px;
-    border-radius: 6px;
-}
-
-.project-card {
-
-}
-
-ul.bulleted {
+ul {
     list-style-type: square;
-    display: block;
-    top: 0;
 }
 
-ul.bulleted > li {
-    display: list-item;
-    padding: 4px;
+ul.experience {
+    width: 800px;
 }
 
-span.position-head {
+ul.experience > li > div {
     display: flex;
+    justify-content: space-between;
+}
+
+div.links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 800px;
+}
+
+div.grid {
+    display: grid;
+    width: 800px;
+    justify-content: center;
+    grid-template-columns: auto auto;
+}
+
+@media (max-width: 800px) {
+    div.grid {
+        width: 500px;
+        grid-template-columns: auto;
+    }
+}
+
+a.grid-item {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 16px;
 }
 
-span.logo {
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-    background-size: cover;
-    background-position: center center;
+div.frame1 {
+    background-image: url("images/frames/gothic_frame1.png");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
 }
 
-#google {
-    background-image: url('images/Google_logo.png');
+div.frame2 {
+    background-image: url("images/frames/gothic_frame2.png");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
 }
 
-#lockheed {
-    background-image: url('images/Lockheed_Martin_logo.png');
+div.frame3 {
+    background-image: url("images/frames/gothic_frame3.png");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
 }
 
-#patch {
-    background-image: url('images/Patch_The_Producer_logo.jpg');
+.grid-item div {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-family: "Jacquard 12";
+    font-size: 60px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 400px;
 }
 
-#nyu {
-    background-image: url('images/NYU_logo.png');
+div.grid-item-text {
+    box-sizing: border-box;
+    /* padding: 16px; */
+    overflow-wrap: break-word;
 }
 
-#starbucks {
-    background-image: url('images/Starbucks_logo.png');
+a:hover .grid-item-text {
+    opacity: 0;
+    transition: opacity ease 200ms;
 }
 
-#rite_aid {
-    background-image: url('images/Rite_Aid_logo.jpg');
+div.grid-item-text div {
+    size:initial;
 }
 
-#kings_bay_y {
-    background-image: url('images/Kings_Bay_Y_logo.png');
+div.grid-item-overlay {
+    background-color: black;
+    opacity: .3;
+    width: 85%;
+    height: 85%;
+    transition: opacity ease 200ms;
 }
 
-#david_m_peterson_pc {
-    background-image: url('images/David_M_Peterson_PC_logo.jpg');
+a:hover .grid-item-overlay {
+    opacity: 0;
+}
+
+.grid-item img {
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
 }
