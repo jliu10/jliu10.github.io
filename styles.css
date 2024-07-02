@@ -61,6 +61,7 @@ p {
 .about-section {
     width: 800px;
     display: flex;
+    justify-content: center;
 }
 
 ul {
@@ -90,6 +91,11 @@ div.grid {
 }
 
 @media (max-width: 800px) {
+    .about-section {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
     div.grid {
         width: 500px;
         grid-template-columns: auto;
