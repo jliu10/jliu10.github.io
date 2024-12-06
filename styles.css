@@ -58,6 +58,13 @@ p {
     padding: 24px;
 }
 
+p.blurb {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    max-width: 800px;
+    text-align: justify;
+}
+
 .about-section {
     width: 800px;
     display: flex;
@@ -88,6 +95,15 @@ div.grid {
     width: 800px;
     justify-content: center;
     grid-template-columns: auto auto;
+}
+
+div.img-seq {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+div.img-seq > img {
+    max-width: 1000px;
 }
 
 @media (max-width: 800px) {
