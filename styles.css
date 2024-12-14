@@ -199,3 +199,9 @@ h1 {
     margin: 0px;
     text-decoration: underline;
 }
+
+h2 {
+    margin: 0px;
+    text-decoration: underline;
+    font-size: 48px;
+}
