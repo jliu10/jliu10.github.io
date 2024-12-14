@@ -100,10 +100,13 @@ div.grid {
 div.img-seq {
     display: grid;
     grid-template-columns: auto;
+    gap: 12px;
+    justify-items: center;
 }
 
 div.img-seq > img {
     max-width: 1000px;
+    max-height: 800px;
 }
 
 @media (max-width: 800px) {
@@ -162,7 +165,6 @@ div.frame3 {
 
 div.grid-item-text {
     box-sizing: border-box;
-    /* padding: 16px; */
     overflow-wrap: break-word;
 }
 
@@ -172,7 +174,7 @@ a:hover .grid-item-text {
 }
 
 div.grid-item-text div {
-    size:initial;
+    size: initial;
 }
 
 div.grid-item-overlay {
@@ -191,4 +193,9 @@ a:hover .grid-item-overlay {
     width: 85%;
     height: 85%;
     object-fit: cover;
+}
+
+h1 {
+    margin: 0px;
+    text-decoration: underline;
 }
