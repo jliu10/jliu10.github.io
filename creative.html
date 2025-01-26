@@ -7,13 +7,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>JUSTIN_TV</title>
+        <title>JINSEN</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DotGothic16&family=Jacquard+12&family=Tiny5&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
         
         
     </head>
@@ -22,53 +23,233 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <script src="scripts.js" async defer></script>
+        <script src="script.js" async defer></script>
         
-        <div class="main">
-            <div class="justin">xxx Justin "Jinsen" Liu xxx</div>
-            <div class="break"></div>
-            <div class="navbar">
-                <span><a href="index.html">About</a></span>
-                <span><a href="experience.html">Experience</a></span>
-                <span><a href="creative.html" class="active">Creative</a></span>
+        <div class="threefold">
+            <nav id="panel1" class="side-panel">
+                <div class="text-aligner">
+                    <a href="index.html">
+                        <span id="left-arrows">&larr;&larr;&larr;</span>
+                    </a>
+                </div>
+            </nav>
+            <div id="panel2" class="background">
+                <h1 id="creative">Creative</h1>
+                <div id="down-arrows">
+                    <p>
+                        <span>&darr; &darr; &darr;</span>
+                        <br>
+                        <span>&darr;&darr;&darr;</span>
+                        <br>
+                        <span>&darr;&darr;</span>
+                        <br>
+                        <span>&darr;</span>
+                    </p>
+                </div>
+                <div id="gekyume">
+                    <p>
+                        The next gekyume of design
+                    </p>
+                </div>
             </div>
-
-            <!-- <div class="break"></div> -->
-            
-            <!-- <p>This page and the following links are a work in progress.</p> -->
-            
-            <div class="grid">
-                <a href="creative/website-designs.html" class="grid-item">
-                    <img src="images/website-designs/tv.png">
-                    <div class="frame3"></div>
-                    <div class="grid-item-overlay"></div>
-                    <div class="grid-item-text">Websites</div>
-                </a>
-                <a href="creative/clothes.html" class="grid-item">
-                    <img src="images/clothes/Ghostfreak Timb R.png">
-                    <div class="frame1"></div>
-                    <div class="grid-item-overlay"></div>
-                    <div class="grid-item-text">Clothes</div>
-                </a>
-                <a href="creative/drawings.html" class="grid-item">
-                    <img src="images/drawings/Lets_leave.jpg">
-                    <div class="frame2"></div>
-                    <div class="grid-item-overlay"></div>
-                    <div class="grid-item-text">Drawings</div>
-                </a>
-                <a href="creative/graphic-designs.html" class="grid-item">
-                    <img src="images/graphic-designs/Freeman Alley p1.png">
-                    <div class="frame3"></div>
-                    <div class="grid-item-overlay"></div>
-                    <div class="grid-item-text">Graphic Designs</div>
-                </a>
-                <a href="creative/photos.html" class="grid-item">
-                    <img src="images/photos/Alien.jpg">
-                    <div class="frame1"></div>
-                    <div class="grid-item-overlay"></div>
-                    <div class="grid-item-text">Photos</div>
-                </a>
+            <div id="panel3" class="side-panel">
+                <div class="text-aligner">
+                    <span>LIFE&nbsp;I</span>
+                    <span>S&nbsp;SUFF</span>
+                    <span>ERING</span>
+                </div>
             </div>
         </div>
+        <div id="gallery">
+            <div id="gallery-top-bar"></div>
+            <div id="carousel">
+                <div id="graphic-designs">
+                    <div class="img-container" id="Exovite-Thumb-8">
+                        <img src="images/graphic-designs/Exovite Thumb 8.JPG"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="img-container" id="Freeman-Alley-p1">
+                        <img src="images/graphic-designs/Freeman Alley p1.png"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div> 
+                    <div class="img-container" id="Freeman-Alley-p2-cybershot">
+                        <img src="images/graphic-designs/Freeman Alley p2 cybershot.png"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="img-container" id="tides">
+                        <img src="images/graphic-designs/Tides.png"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="img-container" id="hayley">
+                        <img src="images/graphic-designs/Hayley.jpg"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="web-designs">
+                    <div class="img-container" id="website-3">
+                        <img src="images/website-designs/tv.png"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="img-container" id="website-4">
+                        <img src="images/website-designs/black.png"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="img-container" id="arnav-website">
+                        <img src="images/website-designs/Arnav website.png"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="img-container" id="9host_tech-startup">
+                        <img src="images/website-designs/9host_tech/Startup (MacBook Pro 14_).png"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="img-container" id="9host_tech-menu">
+                        <img src="images/website-designs/9host_tech/Menu (MacBook Pro 14_).png"/>
+                    </div>
+                    <div class="img-container" id="9host_tech-menu-hover">
+                        <img src="images/website-designs/9host_tech/Menu hover (MacBook Pro 14_).png"/>
+                    </div>
+                    <div class="img-container" id="website-2">
+                        <img src="images/website-designs/minimalist.png"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="img-container" id="website-1">
+                        <img src="images/website-designs/original.png"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="clothes">
+                    <div class="img-container" id="ghostfreak-timb-l">
+                        <img src="images/clothes/Ghostfreak Timb L.png"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="img-container" id="ghostfreak-timb-r">
+                        <img src="images/clothes/Ghostfreak Timb R.png"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="img-container" id="ghillie-shirt-b">
+                        <img src="images/clothes/Ghillie Shirt B.JPG"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="img-container" id="ghillie-shirt-f">
+                        <img src="images/clothes/Ghillie Shirt F.JPG"/>
+                    </div>
+                </div>
+                <div id="drawings">
+                    <div class="img-container" id="echoes-of-silence">
+                        <img src="images/drawings/Echoes of silence.jpeg"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="img-container" id="emo">
+                        <img src="images/drawings/Emo.JPG"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="img-container" id="loneliness-2">
+                        <img src="images/drawings/Loneliness_2.jpg"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="img-container" id="dream-2023-09-02">
+                        <img src="images/drawings/Dream_2023-09-02.jpeg"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="img-container" id="lets-leave">
+                        <img src="images/drawings/Lets_leave.jpg"/>
+                        <div class="overlay-container">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="photographs">
+                    <div class="img-container">
+                        <img src="images/photos/Saint John.jpeg"/>
+                    </div>
+                    <div class="img-container">
+                        <img src="images/photos/Cathedral.jpeg"/>
+                    </div>
+                    <div class="img-container">
+                        <img src="images/photos/Isiah.jpeg"/>
+                    </div>
+                    <div class="img-container">
+                        <img src="images/photos/Church.JPG"/>
+                    </div>
+                    <div class="img-container">
+                        <img src="images/photos/Cemetary.jpg"/>
+                    </div>
+                    <div class="img-container">
+                        <img src="images/photos/Barn.JPG"/>
+                    </div>
+                    <div class="img-container">
+                        <img src="images/photos/Terminal.jpg"/>
+                    </div>
+                    <div class="img-container">
+                        <img src="images/photos/Graduation.jpg"/>
+                    </div>
+                    <div class="img-container">
+                        <img src="images/photos/Torii.jpg"/>
+                    </div>
+                    <div class="img-container">
+                        <img src="images/photos/Alien.jpg"/>
+                    </div>
+                    <div class="img-container">
+                        <img src="images/photos/IMG_4004.jpg"/>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <button id="graphic-designs-button">Graphic Designs</button>
+                <button id="web-designs-button">Web Designs</button>
+                <button id="clothes-button">Clothes</button>
+                <button id="drawings-button">Drawings</button>
+                <button id="photographs-button">Photographs</button>
+            </nav>
+            <div id="img-expansion">
+                <div id="img-top-bar">
+                    <button id="x">X</button>
+                    <p>Lorem ipsum dolor or something like that. Lorem ipsum dolor or something like that. Lorem ipsum dolor or something like that. Lorem ipsum dolor or something like that. Lorem ipsum dolor or something like that. Lorem ipsum dolor or something like that. Lorem ipsum dolor
+                        <a id="visit" target="_blank">Visit</a>
+                    </p>
+                </div>
+                <div class="img-container">
+                    <img src="images/graphic-designs/Exovite Thumb 8.JPG"/>
+                </div>
+                
+            </div>
+        </div>
+        
     </body>
 </html>

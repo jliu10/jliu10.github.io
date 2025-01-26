@@ -1,0 +1,207 @@
+html {
+    background-color: rgb(19, 19, 19);
+    color: rgb(234, 234, 234);
+    font-size: 30px;
+}
+
+body {
+    font-family: "Tiny5";
+}
+
+.justin {
+    font-family: "Jacquard 12";
+    font-size: 48px;
+    padding: 16px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar {
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 36px;
+    width: 600px;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.active {
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+}
+
+span > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    padding: 24px;
+}
+
+p.blurb {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    max-width: 800px;
+    text-align: justify;
+}
+
+.about-section {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul.experience {
+    width: 800px;
+}
+
+ul.experience > li > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 800px;
+}
+
+div.grid {
+    display: grid;
+    width: 800px;
+    justify-content: center;
+    grid-template-columns: auto auto;
+}
+
+div.img-seq {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 12px;
+    justify-items: center;
+}
+
+div.img-seq > img {
+    max-width: 1000px;
+    max-height: 800px;
+}
+
+@media (max-width: 800px) {
+    .about-section {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    div.grid {
+        width: 500px;
+        grid-template-columns: auto;
+    }
+}
+
+a.grid-item {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.frame1 {
+    background-image: url("../../images/frames/gothic_frame1.png");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+div.frame2 {
+    background-image: url("../../images/frames/gothic_frame2.png");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+div.frame3 {
+    background-image: url("../../images/frames/gothic_frame3.png");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item div {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-family: "Jacquard 12";
+    font-size: 60px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 400px;
+}
+
+div.grid-item-text {
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+a:hover .grid-item-text {
+    opacity: 0;
+    transition: opacity ease 200ms;
+}
+
+div.grid-item-text div {
+    size: initial;
+}
+
+div.grid-item-overlay {
+    background-color: black;
+    opacity: .3;
+    width: 85%;
+    height: 85%;
+    transition: opacity ease 200ms;
+}
+
+a:hover .grid-item-overlay {
+    opacity: 0;
+}
+
+.grid-item img {
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+}
+
+h1 {
+    margin: 0px;
+    text-decoration: underline;
+}
+
+h2 {
+    margin: 0px;
+    text-decoration: underline;
+    font-size: 48px;
+}
