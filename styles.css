@@ -2,8 +2,9 @@
     --white: #F0EEF1;
     --black: #2B2B2B;
     --emphasized: linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
-    --default-cursor: url("Images/Icons/roblox_cursor.png");
-    --pointer-cursor: url("Images/Icons/roblox_pointer.png");
+    --default-cursor: url("icons/roblox_cursor.png");
+    --pointer-cursor: url("icons/roblox_pointer.png");
+    --vh: 1vh;
 }
 
 html {
@@ -15,7 +16,7 @@ body {
     background-color: var(--white);
     font-family: 'Nanum Gothic Coding', 'Helvetica', sans-serif;
     color: var(--black);
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     margin: 0;
     overscroll-behavior: none;
 }
@@ -140,7 +141,16 @@ p {
 
 #down-arrows {
     position: fixed;
-    transition: opacity 1s;
+    animation: fadeDownArrows linear;
+    animation-timeline: --creativeTimeline;
+}
+@keyframes fadeDownArrows {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 #creative {
@@ -185,7 +195,7 @@ p {
 #gallery {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     justify-content: space-between;
     overflow: hidden;
     transition: opacity 2s;
@@ -229,13 +239,11 @@ p {
 
 button {
     all: unset;
-    /* height: 100%; */
     cursor: var(--pointer-cursor), pointer;
 }
 
 button:hover {
     font-weight: 1000;
-    /* background-color: white; */
 }
 
 #gallery button {
@@ -395,10 +403,6 @@ li {
 }
 
 @media (max-width: 572px) {
-    body {
-        overflow: hidden;
-    }
-
     .threefold {
         flex-direction: column-reverse;
 
@@ -442,6 +446,10 @@ li {
         max-width: none;
     }
 
+    #panel3 {
+        z-index: 0;
+    }
+
     #panel2.background {
         flex-direction: column;
     }
@@ -454,5 +462,9 @@ li {
         font-size: 26pt;
         padding-top: 13px;
         padding-bottom: 13px;
+    }
+
+    #gallery nav {
+        height: auto;
     }
 }

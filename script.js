@@ -47,18 +47,15 @@ let downArrows = document.getElementById("down-arrows");
 window.addEventListener('load', function () {
     console.log("Loaded");
     sizeFuncs();
-    // scrollEffect();
     wireNavButtons();
     wireImageExpansions();
+    adjustVh();
   })
 
 window.addEventListener('resize', function () {
     console.log("Resized");
     sizeFuncs();
-  })
-
-window.addEventListener('scroll', function () {
-    // scrollEffect();
+    adjustVh();
   })
 
 if (x) {
@@ -71,7 +68,6 @@ function sizeFuncs() {
     setThreefoldHeight();
     alignPanelImgs();
     adjustPanel1Height();
-    // scrollEffect();
 }
 
 function setThreefoldHeight() {
@@ -144,35 +140,6 @@ function adjustPanel1Height() {
     if (newHeight >= 480) panel1.style.height = `${newHeight}px`;
 }
 
-function isElementInViewport (el) {
-    var rect = el.getBoundingClientRect();
-
-    return (
-        rect.top >= 0 ||
-        rect.left >= 0 ||
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) || /* or $(window).height() */
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
-    );
-}
-
-function scrollEffect() {
-    if (!textCreative || !gallery || !downArrows) return;
-    let translateXDist = (window.innerWidth - 138.66) / 2;
-    if (panel1.offsetHeight <= window.scrollY) {
-        textCreative.style.fontSize = "26pt";
-        textCreative.style.width = "auto";
-        textCreative.style.transform = `translateX(-${translateXDist}px)`;
-        downArrows.style.opacity = 0;
-        textCreative.style.backgroundImage = "none";
-    } else {
-        textCreative.style.fontSize = "52pt";
-        textCreative.style.width = "100%";
-        textCreative.style.transform = `translateX(0)`;
-        downArrows.style.opacity = 1;
-        textCreative.style.backgroundImage = "-webkit-linear-gradient(var(--white), rgb(from var(--white) r g b / .95), rgb(from var(--white) r g b / .9), rgb(from var(--white) r g b / 0));";
-    }
-}
-
 function wireNavButtons() {
     if (gallery) {
         for (const button of gallery.querySelector("nav").children) {
@@ -240,4 +207,9 @@ function wireImageExpansions() {
             imageContainer.addEventListener("click", () => expandImage(imageId));
         }
     }
+}
+
+function adjustVh() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
