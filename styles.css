@@ -143,7 +143,9 @@ p {
     position: fixed;
     animation: fadeDownArrows linear;
     animation-timeline: --creativeTimeline;
+    z-index: 0;
 }
+
 @keyframes fadeDownArrows {
     from {
         opacity: 1;
