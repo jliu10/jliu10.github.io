@@ -359,7 +359,6 @@ li {
 
 @media (max-width: 910px) {
     body {
-        background-color: red;
         overflow: scroll;
     }
 
@@ -397,7 +396,6 @@ li {
 
 @media (max-width: 572px) {
     body {
-        background-color: yellow;
         overflow: hidden;
     }
 
