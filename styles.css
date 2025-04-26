@@ -146,6 +146,10 @@ h2 {
     transform: translateX(-25%);
 }
 
+#blue-pill > img {
+    transform: translateX(-20%);
+}
+
 #pills a img:hover {
     animation: spin 2s linear infinite;
 }
@@ -353,4 +357,43 @@ section {
 .fade-slide-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (max-width: 800px) {
+    #green-orb {
+        right: unset;
+    }
+
+    .home {
+        justify-content: center;
+    }
+
+    .home h2 {
+        font-size: 48px;
+    }
+
+    nav ul {
+        font-size: 36px;
+    }
+
+    nav li {
+        width: fit-content;
+    }
+
+    nav span {
+        position: relative;
+        font-family: 'Arial', sans-serif;
+        padding-right: 0;
+        top: 0;
+    }
+
+    #pills {
+        display: flex;
+        height: 100vh;
+        justify-content: space-evenly;
+        margin-top: 200px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }

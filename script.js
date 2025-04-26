@@ -13,9 +13,15 @@ const animateOnScroll = () => {
   
     elements.forEach(el => observer.observe(el));
 };
-  
-  // Run on load and when new content is added (e.g., SPAs)
-  window.addEventListener('DOMContentLoaded', animateOnScroll);
-  window.addEventListener('load', animateOnScroll);
 
-  console.log("JavaScript");
+
+const music = document.querySelector('audio');
+if (music) {
+  music.volume = .5
+}
+  
+// Run on load and when new content is added (e.g., SPAs)
+window.addEventListener('DOMContentLoaded', animateOnScroll);
+window.addEventListener('load', animateOnScroll);
+
+console.log("JavaScript");
