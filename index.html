@@ -13,10 +13,7 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
-
-        
-        
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -25,32 +22,55 @@
         
         <script src="script.js" async defer></script>
         
-        <div class="threefold">
-            <nav id="panel1" class="side-panel">
-                <div class="text-aligner">
-                    <a href="background.html">
-                        <span>LORE</span>
-                    </a>
-                    <a href="creative.html">
-                        <span>CREATV</span>
-                    </a>
-                    <a href="inspos.html">
-                        <span>INSPOS</span>
-                    </a>
-                </div>
-            </nav>
-            <div id="panel2">
-                <img src="selfies/Park.jpeg" />
-                <img src="selfies/Cathedral.jpeg" />
+        <nav>
+            <div class="bar"></div>
+            <span>
+                <b><a href="index.html">~</a></b>
+            </span>
+            <ul>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="swe.html">SWE</a>
+                </li>
+                <li>
+                    <a href="design.html">Design</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="home fade-slide-in">
+            <img id="green-orb" src="images/decoration/green.gif">
+            <h2>
+                Hi, I'm Justin, but you can call me <b>Jinsen.</b>
+                <br><br>
+                I'm a SWE and visual designer with a love for user-facing products and applications.
+            </h2>
+        </div>
+        <div id="pills" class="fade-slide-in">
+            <div id="red-pill">
+                <img src="images/decoration/red-aura.gif">
+                <a href="swe.html">
+                    <img src="images/icons/red-pill.png">
+                </a>
             </div>
-            <div id="panel3" class="side-panel">
-                <div class="text-aligner">
-                    <span>JUSTIN</span>
-                    <span>JINSEN</span>
-                    <span>LIU</span>
-                </div>
+            <div id="blue-pill">
+                <img src="images/decoration/blue-aura.gif">
+                <a href="design.html">
+                    <img src="images/icons/blue-pill.png">
+                </a>
             </div>
         </div>
-        
+        <!-- <img id="vaporwave" src="images/decoration/vaporwave.gif"> -->
+        <audio id="bgMusic" autoplay>
+            <source src="audio/2hollis-3.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+        <footer>
+            <ul>
+                <li><a href="mailto:JJL9909@nyu.edu">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/xxxjinsen/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </footer>
     </body>
 </html>
