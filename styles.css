@@ -39,6 +39,7 @@ nav {
     display: flex;
     text-align: center;
     z-index: 1;
+    align-items: center;
 }
 
 nav .bar {
@@ -82,11 +83,19 @@ nav span a {
 a {
     text-decoration: none;
     color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+nav a {
     display: inline-block;
     position: relative;
     padding: 0.2em 0;
 }
-a::after {
+nav a:hover {
+    text-decoration: none;
+}
+nav a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -98,10 +107,18 @@ a::after {
     opacity: 1;
     transform: scale(0);
     transform-origin: center;
+    border-radius: 4px;
 }
-a:hover::after,
-a:focus::after{
+nav a:hover::after,
+nav a:focus::after{
     transform: scale(1);
+}
+nav ul a::after {
+    transform: scale(0) translateY(4px);
+}
+nav ul a:hover::after,
+nav ul a:focus::after{
+    transform: scale(1) translateY(4px);
 }
 
 div {
@@ -426,6 +443,15 @@ section h1 {
     padding: 0;
 }
 
+.design-card.first {
+    padding-left: 52px;
+    margin-top: 0;
+}
+
+.design-card.last {
+    padding-right: 52px;
+}
+
 @media (max-width: 1100px) {
     .about > div {
         max-width: 60%;
@@ -506,14 +532,16 @@ section h1 {
     section .sub {
         font-size: 20px;
     }
-
-    section {}
     
 }
 
 @media (max-width: 600px) {
     nav ul {
         font-size: 24px;
+    }
+
+    nav span {
+        font-size: 40px;
     }
 
     .about {
@@ -549,8 +577,17 @@ section h1 {
         font-size: 16px;
     }
 
-    section > div {
+    .no-pad div {
+        padding: 0;
+    }
+
+    .design-card.first {
         padding-left: 26px;
+        margin-top: 0;
+    }
+
+    .design-card.last {
         padding-right: 26px;
     }
+
 }
