@@ -176,7 +176,7 @@ h1 {
 }
 
 .about {
-    padding-left: 100px;
+    padding-left: 50px;
     padding-right: 50px;
     height: 100vh;
 }
@@ -186,10 +186,10 @@ h1 {
     z-index: -1;
     float: right;
     max-height: 80%;
-    max-width: 70%;
+    max-width: 100%;
 }
 
-.about div {
+.about > div {
     position: absolute;
     padding: 0;
     max-width: 40%;
@@ -197,6 +197,15 @@ h1 {
     height: 100%;
     flex-direction: column;
     justify-content: center;
+}
+
+.about .backdrop {
+    flex-direction: column;
+    background-color: rgba( 0, 0, 0, 0.7 );
+    backdrop-filter: blur(4px); /* Blur effect */
+    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    padding: 26px;
+    border-radius: 26px;
 }
 
 p {
@@ -238,10 +247,14 @@ p {
     margin-bottom: 60px;
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-left: 26px;
+    margin-right: 26px;
 }
 
 .exp-card h1 {
     margin: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .exp-card p {
@@ -337,15 +350,17 @@ footer li {
 
 section {
     margin-bottom: 60px;
+    position: relative;
+}
+
+section h1 {
+    padding-left: 26px;
+    padding-right: 26px;
+    margin-bottom: 0;
 }
 
 .carousel img {
     height: 100%;
-}
-
-.pad {
-    margin-left: 8px;
-    margin-right: 8px;
 }
 
 .fade-slide-in {
@@ -359,7 +374,13 @@ section {
     transform: translateY(0);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
+    .about > div {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 900px) {
     #green-orb {
         right: unset;
     }
@@ -394,6 +415,42 @@ section {
         margin-top: 200px;
         flex-direction: column;
         align-items: center;
+    }
+
+    .about .backdrop > p {
+        font-size: 24px;
+    }
+
+    .about .backdrop > h1 {
+        font-size: 36px;
+    }
+
+    .exp-card {
+        padding: 26px;
+    }
+
+    .exp-card > div {
+        padding: 0;
+    }
+
+    .exp-card .icon {
+        display: none;
+    }
+
+    .exp-card p, .exp-card li {
+        font-size: 20px;
+    }
+
+    .exp-card h1 {
+        font-size: 36px;
+    }
+
+    section > div > h1 {
+        font-size: 48px;
+    }
+
+    section .sub {
+        font-size: 20px;
     }
     
 }
