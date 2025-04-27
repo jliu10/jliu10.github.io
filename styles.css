@@ -21,7 +21,6 @@ body {
     color: white;
     font-family: 'Eurostile', sans-serif;
     font-size: 40px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: 0;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -74,16 +73,35 @@ nav span {
     z-index: 1;
     padding-left: 14px;
     padding-right: 14px;
-    top: 10px;
+}
+
+nav span a {
+    padding: 0.1em 0;
 }
 
 a {
     text-decoration: none;
     color: white;
+    display: inline-block;
+    position: relative;
+    padding: 0.2em 0;
 }
-
-a:hover {
-    text-decoration: underline;
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: white;
+    transition: opacity 300ms, transform 300ms;
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+a:hover::after,
+a:focus::after{
+    transform: scale(1);
 }
 
 div {
@@ -294,6 +312,14 @@ p {
     margin-top: 150px;
 }
 
+.aligner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
 footer {
     font-family: 'JetBrains Mono', sans-serif;
     position: relative;
@@ -368,6 +394,7 @@ footer li {
 section {
     padding-bottom: 60px;
     position: relative;
+    max-width: 1200px;
 }
 
 section.top {
@@ -424,7 +451,6 @@ section h1 {
 
     nav span {
         position: relative;
-        font-family: 'Arial', sans-serif;
         padding-right: 0;
     }
 
