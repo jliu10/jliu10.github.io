@@ -463,12 +463,16 @@ section h1 {
         align-items: center;
     }
 
-    .about .backdrop > p {
+    .about p {
         font-size: 24px;
     }
 
-    .about .backdrop > h1 {
+    .about h1 {
         font-size: 36px;
+    }
+
+    .about > div {
+        max-width: 90%;
     }
 
     .exp-card {
@@ -506,6 +510,15 @@ section h1 {
 @media (max-width: 600px) {
     nav ul {
         font-size: 24px;
+    }
+
+    .about {
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+
+    .about p {
+        font-size: 16px;
     }
 
     .exp-card h1 {
