@@ -350,7 +350,7 @@ footer li {
 }
 
 .design-card > img {
-    position: absolute;
+    /* position: absolute; */
     height: 392px;
 }
 
