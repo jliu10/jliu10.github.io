@@ -148,6 +148,7 @@ h2 {
     right: 0;
     height: 90vh;
     z-index: -1;
+    mix-blend-mode: lighten;
 }
 
 #pills {
@@ -450,6 +451,16 @@ section h1 {
 
 .design-card.last {
     padding-right: 52px;
+}
+
+.skills > span {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 2px solid #EEEEEE;
+    border-radius: 50px;
+    display: inline-block;
 }
 
 @media (max-width: 1100px) {
