@@ -17,7 +17,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #121212;
     color: white;
     font-family: 'Eurostile', sans-serif;
     font-size: 40px;
@@ -373,12 +373,13 @@ footer li {
     overflow-y: hidden;
     padding-bottom: 4px;
     height: 404px;
+    scroll-snap-type: x mandatory;
 }
 
 .design-card {
-    /* position: absolute; */
     height: 400px;
     padding: 0;
+    scroll-snap-align: center;
 }
 
 .design-card a {
