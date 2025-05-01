@@ -17,7 +17,8 @@
 }
 
 body {
-    background-color: #121212;
+    /* background-color: #121212; */
+    background-color: black;
     color: white;
     font-family: 'Eurostile', sans-serif;
     font-size: 40px;
